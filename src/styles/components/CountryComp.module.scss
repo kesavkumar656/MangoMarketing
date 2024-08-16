@@ -1,0 +1,14 @@
+@import "../helpers/helpers.scss";
+.CountryComp {
+	display: flex;
+	color: var(--color_black);
+	align-items: center;
+	width: 350px;
+	border-radius: 55px;
+	padding: 10px;
+	background-color: var(--color_white);
+	justify-content: space-around;
+
+	div {
+	}
+}

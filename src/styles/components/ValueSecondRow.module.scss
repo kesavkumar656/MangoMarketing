@@ -1,0 +1,27 @@
+@import "../helpers/helpers.scss";
+.ValueRowTwoContainer {
+	div:nth-child(1) {
+		@extend %d_flex;
+		justify-content: space-between;
+	}
+	div:nth-child(2) {
+		@extend %d_flex;
+		justify-content: space-between;
+
+		Image:nth-child(2) {
+			border: 1px solid black;
+		}
+	}
+}
+.ValueImg {
+	border: 1px solid black;
+
+	div {
+		padding: 70px;
+		display: flex;
+		/* margin: 10px; */
+		// border-right: 1px solid black;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,13 @@
+@import "../helpers/helpers.scss";
+.AnimatedSlider {
+	div {
+		@extend %f_r_aj_center;
+
+		gap: 20px;
+		margin: 1%;
+	}
+}
+.Slide_div1 {
+	gap: 10px;
+	display: flex;
+}

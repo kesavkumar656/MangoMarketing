@@ -1,0 +1,12 @@
+@import "../helpers/helpers.scss";
+
+.RowTwo {
+	@extend %relative_box;
+	@extend %f_r_a_center;
+	p {
+		width: 30%;
+	}
+	img {
+		padding: 10% !important;
+	}
+}

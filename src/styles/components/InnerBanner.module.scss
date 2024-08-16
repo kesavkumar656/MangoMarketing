@@ -1,0 +1,23 @@
+@import "../helpers/helpers.scss";
+
+.inner_banner_wrap {
+	@extend %relative_box;
+	overflow: hidden;
+	.banner_image {
+		display: grid;
+		justify-items: center;
+		img {
+			height: 100% !important;
+			// width: 100% !important;
+			width:100% !important;
+			object-fit: cover;
+			border-radius: 30px 
+		}
+	}
+
+	.banner_content {
+		@extend %full_overlay;
+		display: grid;
+		place-items: center center;
+	}
+}

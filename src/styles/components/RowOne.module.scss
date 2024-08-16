@@ -1,0 +1,13 @@
+@import "../helpers/helpers.scss";
+
+.RowOne {
+	padding: 5%;
+	
+
+	@extend %f_r_a_center;
+	div:nth-child(2) {
+		@extend %f_r_a_center;
+		img:nth-child(2) {
+		}
+	}
+}

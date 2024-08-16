@@ -1,0 +1,30 @@
+@import "../helpers/helpers.scss";
+
+.QuoteBox {
+	flex-direction: column;
+	// margin: 10px;
+	border-radius: 30px;
+	background-color: var(--color_primary_dark);
+	padding: 40px;
+	width: 668px;
+	height: auto;
+	border: 1px solid var(--color_border);
+	div {
+	}
+	p {
+		color: var(--color_white);
+		font-size: var(--font-sizePara);
+	}
+
+	.QuoteBoxLin_2 {
+		padding-top: 20px;
+		display: flex;
+
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.logoimg {
+	width: 76px;
+	height: 49px;
+}
