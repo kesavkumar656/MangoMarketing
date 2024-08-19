@@ -2,6 +2,17 @@
 
 .ScrollEffectTitle {
 	@extend %f_clm;
+
+	width: 100%;
+	// align-items: flex-start;
+	color: var(--color-white) !important ;
+	// padding: 50px;
+	height: auto;
+	// justify-content: center;
+	gap: 50px;
+	h1 {
+		font-size: var(--font-size-xl);
+	}
 	div:nth-child(2) {
 		display: flex;
 		align-items: flex-start;

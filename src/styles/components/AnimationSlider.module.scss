@@ -1,5 +1,6 @@
 @import "../helpers/helpers.scss";
 .AnimatedSlider {
+	overflow: hidden;
 	div {
 		@extend %f_r_aj_center;
 

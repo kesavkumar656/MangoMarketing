@@ -28,7 +28,9 @@ $browser-prefixes: false !default;
 	--color_white: #ffffff;
 	--color_border: rgba(255, 255, 255, 0.1);
 --font-sizePara:20px;
-
+--font-size-xxl:120px
+--font-size-xl:100px
+--font-size-m:60px
 	// Extras
 	--container_width: 100%;
 	--container_left_space: calc((100% - var(--container_width)) / 2);

@@ -23,19 +23,23 @@ import Img3 from "public/img/assets/valueimg3shape.png";
 export default function ValueSecondRow() {
 	return (
 		<div className={`${styles.ValueRowTwoContainer}`}>
-			<div>
-				<p>Values we swear by</p>
+			<div className={`${styles.LineOne}`}>
+				<p>
+					Values we <span className="PrimaryColor">swear by</span>{" "}
+				</p>
 				<Button></Button>
 			</div>
-			<div className={`${styles.ValueImg}`}>
-				<div>
-					<Image src={Img1} alt=""></Image>
-				</div>
-				<div>
-					<Image src={Img2} alt=""></Image>
-				</div>
-				<div>
-					<Image src={Img3} alt=""></Image>
+			<div>
+				<div className={`${styles.ValueImg}`}>
+					<div>
+						<Image src={Img1} alt=""></Image>
+					</div>
+					<div>
+						<Image src={Img2} alt=""></Image>
+					</div>
+					<div>
+						<Image src={Img3} alt=""></Image>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,10 @@
 	h1 {
 		font-size: 64px !important;
 		font-weight: bold;
+		opacity: 0.5;
 	}
-	div {
-	}
+}
+.PrimaryColor {
+	color: var(--color_primary) !important ;
+	opacity: 1 !important;
 }

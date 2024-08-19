@@ -1,7 +1,7 @@
 // MODULES //
 
 // COMPONENTS //
-
+import Image from "next/image";
 // STYLES //
 import styles from "@/styles/components/InnerBanner.module.scss";
 

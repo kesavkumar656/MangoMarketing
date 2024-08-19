@@ -1,9 +1,10 @@
 @import "../helpers/helpers.scss";
 .hero_wrap {
+	overflow: hidden;
+	color: var(--color_white);
 	background-color: var(--color_black);
-	margin: 20px;
+
 	h1 {
 		text-align: center;
-		// font-size:;
 	}
 }

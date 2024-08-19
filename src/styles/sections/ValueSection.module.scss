@@ -1,5 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .ValueSection {
+	overflow: hidden;
 	background-color: var(--color_white);
 }
+

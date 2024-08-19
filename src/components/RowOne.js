@@ -22,20 +22,28 @@ export default function RowOne() {
 	return (
 		<div className={`${styles.RowOne} `}>
 			<div>
-				<h4 className="color_white">
-					Connect with their interests Resonate with their sentiment Campaign towards
-					success
-				</h4>
+				<h5 className="color_white">
+					Connect with their <span className="PrimaryColor">interests </span>
+					Resonate with their <span className="PrimaryColor">sentiment </span>{" "}
+					Campaign towards <span className="PrimaryColor">success </span>
+				</h5>
 				<p className="text_sm color_white ">
 					Don't just know your audience, understand them better with us. Deep dive
 					into the finer nuances of their habits and preferences to create campaigns
 					that engage on a profound level.
 				</p>
 			</div>
-			<div className="container">
-				<Image src={img1} alt="Arrow" />
-				<Image src={img2} alt="Arrow" />
-				<Image src={img3} alt="Arrow" />
+			<div className={styles.imageDiv}>
+				<div>
+					<Image src={img1} alt="Arrow" />
+				</div>
+
+				<div>
+					<Image src={img2} alt="Arrow" />
+				</div>
+				<div>
+					<Image src={img3} alt="Arrow" />
+				</div>
 			</div>
 		</div>
 	);
