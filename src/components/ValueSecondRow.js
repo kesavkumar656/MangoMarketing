@@ -1,7 +1,7 @@
 // MODULES //
 
 // COMPONENTS //
-import Button from "src/components/Buttons/Button.js";
+
 import Image from "next/image";
 
 // SECTIONS //
@@ -17,6 +17,7 @@ import styles from "@/styles/components/ValueSecondRow.module.scss";
 import Img1 from "public/img/assets/valueimg1shape.png";
 import Img2 from "public/img/assets/valueimg2shape.png";
 import Img3 from "public/img/assets/valueimg3shape.png";
+import Button1 from "./Buttons/Button1.jsx";
 // DATA //
 
 /** ValueSecondRow Component */
@@ -25,9 +26,12 @@ export default function ValueSecondRow() {
 		<div className={`${styles.ValueRowTwoContainer}`}>
 			<div className={`${styles.LineOne}`}>
 				<p>
-					Values we <span className="PrimaryColor">swear by</span>{" "}
+					Values we <span className="PrimaryColor">swear by</span>
 				</p>
-				<Button></Button>
+				<div>
+					<Button1 Text="<"></Button1>
+					<Button1 Text=">"></Button1>
+				</div>
 			</div>
 			<div>
 				<div className={`${styles.ValueImg}`}>
