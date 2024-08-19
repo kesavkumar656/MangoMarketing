@@ -21,11 +21,11 @@ export default function ScrollEffect() {
 		<div className={`${styles.ScrollEffect}`}>
 			<div>
 				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
+				<h1>Social Media Marketing</h1>
+				<h1 className={`${styles.PrimaryColor}`}>Influencer Marketing</h1>
+				<h1>Public Relations</h1>
+				<h1>Content Relations</h1>
+				<h1>Promotional Staffing</h1>
 				<h1>Brand Strategy</h1>
 				<h1>Brand Strategy</h1>
 				<h1>Brand Strategy</h1>

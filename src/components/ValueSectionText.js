@@ -20,7 +20,11 @@ export default function ValueSectionText() {
 	return (
 		<div className={`${styles.ValueText}`}>
 			<div>
-				<h1>What makes us the Multicultural Marketing Mavericks?</h1>
+				<h1>
+					<span className="PrimaryColor">
+						What makes us the Multicultural Marketing Mavericks?
+					</span>
+				</h1>
 				<p>
 					We go the distance between conversations and conversions through forging
 					lasting connections.

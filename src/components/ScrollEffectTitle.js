@@ -22,10 +22,13 @@ export default function ScrollEffectTitle() {
 	return (
 		<div className={`${styles.ScrollEffectTitle}`}>
 			<div className="">
-				<h6>Different cultures, diverse consumer languages We speak them all</h6>
+				<p>
+					Different cultures, diverse consumer languages <br />{" "}
+					<span className="PrimaryColor">We speak them all</span>{" "}
+				</p>
 			</div>
 			<div className="d_flex">
-				<Image src={Img1}></Image>
+				<Image alt="" src={Img1}></Image>
 				<ScrollEffect></ScrollEffect>
 			</div>
 		</div>

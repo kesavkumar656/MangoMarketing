@@ -59,6 +59,13 @@ section {
 	margin: 0 auto;
 	width: var(--container_width);
 }
+.orangetxt {
+	color: var(--color-primary);
+}
+.PrimaryColor {
+	color: var(--color_primary) !important ;
+	opacity: 1 !important;
+}
 
 .row {
 	display: flex;

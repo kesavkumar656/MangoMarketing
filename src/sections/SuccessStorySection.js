@@ -12,6 +12,7 @@
 import styles from "@/styles/sections/SuccessStorySection.module.scss";
 import QuotesBoxSlider from "../components/QuotesBoxSlider";
 import GlobalSpanning from "../components/GlobalSpanning";
+import ContactUs from "../components/ContactUs";
 
 // IMAGES //
 
@@ -23,6 +24,7 @@ export default function SuccessStorySection() {
 		<section className={styles.SuccessStorySection}>
 			<QuotesBoxSlider></QuotesBoxSlider>
 			<GlobalSpanning></GlobalSpanning>
+		<ContactUs></ContactUs>
 		</section>
 	);
 }

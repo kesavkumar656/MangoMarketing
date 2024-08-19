@@ -2,10 +2,12 @@
 
 .main_header {
 	@extend %f_r_aj_center;
-	// position: fixed;
+	position: sticky;
+
 	width: 100%;
 	z-index: 20;
 	top: 0;
+
 	color: var(--color_primary);
 	box-shadow: 0 -6px 10px 5px (#f4be69 0.2);
 	background-color: var(--color_black);
@@ -30,13 +32,13 @@
 				padding-top: 5%;
 				background-color: var(--color_white);
 				transition: ease all 300ms;
-				transform: translateX(-100%);
-				flex-direction: column;
+				// transform: translateX(-100%);
+				// flex-direction: column;
 				width: 100%;
-				position: absolute;
+				// position: absolute;
 				top: 100%;
 				left: 0;
-				height: 100vh;
+				// height: 100vh;
 			}
 			.links {
 				@extend %relative_box;

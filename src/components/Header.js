@@ -122,11 +122,11 @@ export default function Header() {
 					</div>
 
 					{/* Hamburger icon visible in mobile only */}
-					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
+					{/* <div className={styles.hamburger_icon} onClick={toggleSidebar}>
 						<span className={styles.hamburger_line}></span>
 						<span className={styles.hamburger_line}></span>
 						<span className={styles.hamburger_line}></span>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

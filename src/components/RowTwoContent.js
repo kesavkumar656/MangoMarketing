@@ -19,13 +19,17 @@ import Bridge from "@/../public/img/assets/bridge.png";
 export default function RowTwoContent() {
 	return (
 		<>
-			<h1>Say hello to Mango Marketing!</h1>
-			<div className={`${styles.RowTwo} `}>
-				<Image src={Bridge} />
-				<p>
-					A boutique agency that specialises in reaching ethnic communities across
-					the UK and beyond, with a client-centric approach that brings results.
-				</p>
+			<div className={`${styles.RowTwoContainer} `}>
+				<h1>
+					Say hello <span className="PrimaryColor">to</span> Mango Marketing!
+				</h1>
+				<div className={`${styles.RowTwo} `}>
+					<Image src={Bridge} alt="" />
+					<p>
+						A boutique agency that specialises in reaching ethnic communities across
+						the UK and beyond, with a client-centric approach that brings results.
+					</p>
+				</div>
 			</div>
 		</>
 	);
