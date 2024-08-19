@@ -28,7 +28,25 @@ import logo10 from "@/../public/img/assets/LogoAnimation/img10.png";
 export default function AnimationSlider() {
 	return (
 		<div className={`${styles.AnimatedSlider} `}>
-			<div className="Slide_div1">
+			<div className={`${styles.Slide_div1} `}>
+				<Image src={logo1}></Image>
+
+				<Image src={logo2}></Image>
+
+				<Image src={logo3}></Image>
+
+				<Image src={logo4}></Image>
+
+				<Image src={logo5}></Image>
+				<Image src={logo1}></Image>
+
+				<Image src={logo2}></Image>
+
+				<Image src={logo3}></Image>
+
+				<Image src={logo4}></Image>
+
+				<Image src={logo5}></Image>
 				<Image src={logo1}></Image>
 
 				<Image src={logo2}></Image>
@@ -39,7 +57,25 @@ export default function AnimationSlider() {
 
 				<Image src={logo5}></Image>
 			</div>
-			<div>
+			<div className={`${styles.Slide_div2} `}>
+				<Image src={logo6}></Image>
+
+				<Image src={logo7}></Image>
+
+				<Image src={logo8}></Image>
+
+				<Image src={logo9}></Image>
+
+				<Image src={logo10}></Image>
+				<Image src={logo6}></Image>
+
+				<Image src={logo7}></Image>
+
+				<Image src={logo8}></Image>
+
+				<Image src={logo9}></Image>
+
+				<Image src={logo10}></Image>
 				<Image src={logo6}></Image>
 
 				<Image src={logo7}></Image>
