@@ -2,14 +2,25 @@
 
 .inner_banner_wrap {
 	@extend %relative_box;
+	height: 100vh;
+	padding: 20px;
+	margin: 10px 0px 100px 0px;
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
+	width: 99%;
+	height: auto;
+	// >>
+
 	.banner_image {
 		display: grid;
+		width: 90%;
+		height: 50%;
 		justify-items: center;
 		img {
-			height: 100% !important;
+			// height: 100% !important;
 
-			width: 99% !important;
+			// width: 99% !important;
 			object-fit: cover;
 			border-radius: 30px;
 		}
@@ -17,7 +28,19 @@
 
 	.banner_content {
 		@extend %full_overlay;
-		display: grid;
-		place-items: center center;
 	}
+}
+.width100 {
+	overflow: hidden;
+}
+.zoom_element {
+	background-color: #4caf50;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	border-radius: 50%;
+	transition: transform 0.5s ease;
+	transform: scale(1);
 }

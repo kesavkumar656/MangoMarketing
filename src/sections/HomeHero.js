@@ -7,7 +7,8 @@
 // PLUGINS //
 
 // UTILS //
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // STYLES //
 import styles from "@/styles/sections/HomeHero.module.scss";
 import InnerBanner from "../components/InnerBanner";
@@ -29,7 +30,7 @@ export default function HomeHero() {
 				cultures?
 			</h1>
 
-			<InnerBanner></InnerBanner>
+			<InnerBanner gsap={gsap} ScrollTrigger={ScrollTrigger}></InnerBanner>
 			<RowOne></RowOne>
 			<RowTwoContent></RowTwoContent>
 			<AnimationSlider></AnimationSlider>

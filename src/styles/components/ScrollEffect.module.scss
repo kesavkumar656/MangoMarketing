@@ -4,14 +4,16 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 	h1 {
 		font-size: 64px !important;
-		font-weight: bold;
-		opacity: 0.5;
+		font-weight: 500;
+		color: rgb(255, 255, 255);
+		transition: background-color 0.3s linear;
 	}
 }
 .PrimaryColor {
-	color: var(--color_primary) !important ;
+	color: var(--color_primary);
 	opacity: 1 !important;
 }
+
+// ???

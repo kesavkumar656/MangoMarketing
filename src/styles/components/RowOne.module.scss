@@ -1,11 +1,17 @@
 @import "../helpers/helpers.scss";
 
 .RowOne {
-	padding: 5%;
+	// padding: 5%;
 	@extend %f_r_a_center;
 	justify-content: space-around;
 	p {
 		font-weight: 100;
+	}
+
+	.wrapper {
+		width: 80%;
+		display: flex;
+		
 	}
 }
 .imageDiv {

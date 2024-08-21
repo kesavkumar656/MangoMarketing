@@ -24,7 +24,7 @@ export default function SuccessStorySection() {
 		<section className={styles.SuccessStorySection}>
 			<QuotesBoxSlider></QuotesBoxSlider>
 			<GlobalSpanning></GlobalSpanning>
-		<ContactUs></ContactUs>
+			<ContactUs></ContactUs>
 		</section>
 	);
 }

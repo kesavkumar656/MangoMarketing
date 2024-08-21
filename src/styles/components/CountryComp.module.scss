@@ -8,7 +8,9 @@
 	padding: 10px;
 	background-color: var(--color_white);
 	justify-content: space-around;
-
+	h1 {
+		color: var(--color_black) !important;
+	}
 	div {
 		display: flex;
 		flex-direction: column;

@@ -1,5 +1,5 @@
 // MODULES //
-
+import Marquee from "react-fast-marquee";
 // COMPONENTS //
 import Image from "next/image";
 // SECTIONS //

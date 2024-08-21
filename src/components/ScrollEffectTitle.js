@@ -1,5 +1,6 @@
 // MODULES //
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // COMPONENTS //
 import Image from "next/image";
 import ScrollEffect from "./ScrollEffect";
@@ -29,7 +30,7 @@ export default function ScrollEffectTitle() {
 			</div>
 			<div className="d_flex">
 				<Image alt="" src={Img1}></Image>
-				<ScrollEffect></ScrollEffect>
+				<ScrollEffect gsap={gsap} ScrollTrigger={ScrollTrigger}></ScrollEffect>
 			</div>
 		</div>
 	);
