@@ -41,7 +41,7 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 				end: () => `+=${h1.clientHeight + 30}`,
 				toggleActions: "play reverse none reverse",
 				toggleClass: { targets: h1, className: "PrimaryColor" },
-				markers: true,
+				// markers: true,
 			});
 		});
 	});
