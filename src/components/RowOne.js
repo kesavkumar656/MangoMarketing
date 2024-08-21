@@ -29,9 +29,9 @@ export default function RowOne() {
 						Campaign towards <span className="PrimaryColor">success </span>
 					</h5>
 					<p className="text_sm color_white ">
-						Don't just know your audience, understand them better with us. Deep dive
-						into the finer nuances of their habits and preferences to create campaigns
-						that engage on a profound level.
+						Don &apos;t just know your audience, understand them better with us. Deep
+						dive into the finer nuances of their habits and preferences to create
+						campaigns that engage on a profound level.
 					</p>
 				</div>
 				<div className={styles.imageDiv}>
