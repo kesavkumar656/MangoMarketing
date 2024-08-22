@@ -22,7 +22,7 @@ import Img1 from "@/../public/img/assets/scrollEffectImg.png";
 export default function ScrollEffect({ gsap, ScrollTrigger }) {
 	useEffect(() => {
 		const h1s = document.querySelectorAll("h1");
-
+		const imageAnimation = gsap.timeline();
 		h1s.forEach((h1, index) => {
 			gsap.to(h1, {
 				autoAlpha: 1,
@@ -36,12 +36,12 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 
 			ScrollTrigger.create({
 				trigger: h1,
-				id: index + 1,
+
 				start: "top center",
-				end: () => `+=${h1.clientHeight + 30}`,
+				end: "+=50px",
 				toggleActions: "play reverse none reverse",
 				toggleClass: { targets: h1, className: "PrimaryColor" },
-				// markers: true,
+				markers: true,
 			});
 		});
 	});
