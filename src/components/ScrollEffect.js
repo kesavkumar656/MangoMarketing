@@ -41,7 +41,7 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 				end: "+=50px",
 				toggleActions: "play reverse none reverse",
 				toggleClass: { targets: h1, className: "PrimaryColor" },
-				markers: true,
+				// markers: true,
 			});
 		});
 	}, []);
