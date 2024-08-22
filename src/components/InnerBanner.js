@@ -29,7 +29,7 @@ function InnerBanner({
 		const imageAnimation = gsap.timeline();
 
 		if (isDesktop) {
-			imageAnimation.to(bannerImg, { scale: 1.5 }, "first");
+			imageAnimation.to(bannerImg, { scale: 1.5 }, "first" );
 
 			ScrollTrigger.create({
 				animation: imageAnimation,
