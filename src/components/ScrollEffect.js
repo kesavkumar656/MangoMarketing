@@ -21,8 +21,9 @@ import Img1 from "@/../public/img/assets/scrollEffectImg.png";
 /** ScrollEffect Component */
 export default function ScrollEffect({ gsap, ScrollTrigger }) {
 	useEffect(() => {
-		const h1s = document.querySelectorAll("h1");
-		const imageAnimation = gsap.timeline();
+		const container = document.querySelector(`.${styles.ScrollEffect}`);
+		const h1s = container.querySelectorAll("h1");
+
 		h1s.forEach((h1, index) => {
 			gsap.to(h1, {
 				autoAlpha: 1,
@@ -36,7 +37,6 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 
 			ScrollTrigger.create({
 				trigger: h1,
-
 				start: "top center",
 				end: "+=50px",
 				toggleActions: "play reverse none reverse",
@@ -44,7 +44,7 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 				markers: true,
 			});
 		});
-	});
+	}, []);
 
 	return (
 		<div className={`${styles.ScrollEffect}`}>
