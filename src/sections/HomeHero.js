@@ -24,7 +24,7 @@ import ScrollEffectTitle from "../components/ScrollEffectTitle";
 /** HomeHero Section */
 export default function HomeHero() {
 	return (
-		<div className={`${styles.hero_wrap} text_xl  `}>
+		<div className={`${styles.hero_wrap} text_xl container   `}>
 			<h1>
 				Think you know your <span className="PrimaryColor">audience</span> across
 				cultures?

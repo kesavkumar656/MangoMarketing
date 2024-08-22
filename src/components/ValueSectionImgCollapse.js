@@ -19,7 +19,7 @@ import Img2 from "@/../public/img/assets/Value_img2.png";
 /** ValueSectionImgCollapse Component */
 export default function ValueSectionImgCollapse() {
 	return (
-		<div className={`${styles.ValueImg} next_cover_image`}>
+		<div className={`${styles.ValueImg} next_cover_image container`}>
 			<div>
 				<Image className="" src={Img1}></Image>
 			</div>

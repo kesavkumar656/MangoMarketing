@@ -1,57 +1,67 @@
-// MODULES //
-
-// COMPONENTS //
 import QuoteBox from "./QuoteBox";
-
-// SECTIONS //
-
-// PLUGINS //
-
-// UTILS //
-
-// STYLES //
+import Slider from "react-slick";
+import Image from "next/image";
 import styles from "@/styles/components/QuotesBoxSlider.module.scss";
-
-// IMAGES //
 import logo1 from "@/../public/img/assets/LogoAnimation/img1.png";
 import logo2 from "@/../public/img/assets/LogoAnimation/img2.png";
 import logo3 from "@/../public/img/assets/LogoAnimation/img3.png";
-import logo4 from "@/../public/img/assets/LogoAnimation/img4.png";
-// DATA //
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import DefaultBanner from "@/../public/img/banner/defaultDesktopBanner.jpg";
 /** QuotesBoxSlider Component */
 export default function QuotesBoxSlider() {
+	const data = [
+		{
+			id: 1,
+			img: logo1,
+			company: "Business head, Zee Tv",
+			name: "Parul Goel",
+			quotes:
+				"I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.",
+		},
+		{
+			id: 2,
+			img: logo2,
+			company: "Business head, Zee Tv",
+			name: "Parul Goel",
+			quotes:
+				"I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.",
+		},
+		{
+			id: 3,
+			img: logo3,
+			company: "Business head, Zee Tv",
+			name: "Parul Goel",
+			quotes:
+				"I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.",
+		},
+
+		// Add more items as needed
+	];
+
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	};
+
 	return (
-		<div className={`${styles.QuotesSliderContainer} `}>
-			<div className="text_center">
-				<h1>Success stories </h1>
-				<h2>From our happy patrons</h2>
-			</div>
-			<div>
-				<QuoteBox
-					img={logo1}
-					company="Business head, Zee Tv"
-					name="Parul Goel"
-					quotes="I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.دو"
-				></QuoteBox>
-				<QuoteBox
-					img={logo2}
-					company="Business head, Zee Tv"
-					name="Parul Goel"
-					quotes="I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.دو"
-				></QuoteBox>
-				<QuoteBox
-					img={logo3}
-					company="Business head, Zee Tv"
-					name="Parul Goel"
-					quotes="I've partnered with Nidhi since 2015 for various successful projects, including an outdoor launch for & TV. Mango Marketing & Events epitomizes approachability, flexibility, and dedication. They prioritize prompt, customer-first solutions, making collaboration seamless. Nidhi's proactive approach and collaborative working style have been a pleasure to work with.دو"
-				></QuoteBox>
-			</div>
-			<div className={`${styles.buttonDivQuotesBox}`}>
-				<button></button>
-				<button></button>
-				<button></button>
-			</div>
+		<div className={`${styles.QuoteBox}`}>
+			<Slider {...settings}>
+				{data.map((item) => (
+					<div key={item.id}>
+						<p>{item.company}</p>
+						<p>{item.name}</p>
+						<p>{item.quotes}</p>
+						<img src={item.img} alt="" />
+					</div>
+				))}
+			</Slider>
 		</div>
 	);
 }

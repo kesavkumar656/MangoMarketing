@@ -32,6 +32,7 @@ export default function QuoteBox(props) {
 					</div>
 				</div>
 				<div className={`${styles.logoimg}`}>
+					
 					<Image src={props.img} alt=""></Image>
 				</div>
 			</div>

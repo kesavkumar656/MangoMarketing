@@ -38,6 +38,11 @@
 			color: var(--color_white);
 			align-items: center;
 			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:active {
+			background-color: var(--color_white);
+			color: var(--color_black);
 		}
 		input:focus {
 		}

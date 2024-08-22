@@ -21,7 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 /** Value-Section Section */
 export default function ValueSection() {
 	return (
-		<section className={`${styles.ValueSection} `}>
+		<section className={`${styles.ValueSection} container `}>
 			<ValueFirstRow></ValueFirstRow>
 			<ValueSecondRow></ValueSecondRow>
 		</section>
