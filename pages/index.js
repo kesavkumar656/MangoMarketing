@@ -32,7 +32,7 @@ export default function HomePage() {
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
 
 			{/* Header */}
-			<Header />
+			<Header className="container" />
 
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} `}>

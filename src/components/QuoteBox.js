@@ -18,7 +18,7 @@ import styles from "@/styles/components/QuoteBox.module.scss";
 /** QuoteBox Component */
 export default function QuoteBox(props) {
 	return (
-		<div className={`${styles.QuoteBox}`}>
+		<div className={`${styles.QuoteBox} container`}>
 			<div>
 				<p>“ {props.quotes}</p>
 			</div>
@@ -32,7 +32,6 @@ export default function QuoteBox(props) {
 					</div>
 				</div>
 				<div className={`${styles.logoimg}`}>
-					
 					<Image src={props.img} alt=""></Image>
 				</div>
 			</div>

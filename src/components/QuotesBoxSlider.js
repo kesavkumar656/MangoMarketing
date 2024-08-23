@@ -14,7 +14,7 @@ export default function QuotesBoxSlider() {
 	const data = [
 		{
 			id: 1,
-			img: logo1,
+			img: { logo1 },
 			company: "Business head, Zee Tv",
 			name: "Parul Goel",
 			quotes:
@@ -22,7 +22,7 @@ export default function QuotesBoxSlider() {
 		},
 		{
 			id: 2,
-			img: logo2,
+			img: { logo2 },
 			company: "Business head, Zee Tv",
 			name: "Parul Goel",
 			quotes:
@@ -30,7 +30,7 @@ export default function QuotesBoxSlider() {
 		},
 		{
 			id: 3,
-			img: logo3,
+			img: { logo3 },
 			company: "Business head, Zee Tv",
 			name: "Parul Goel",
 			quotes:
@@ -42,6 +42,7 @@ export default function QuotesBoxSlider() {
 
 	const settings = {
 		dots: true,
+		
 		infinite: true,
 		speed: 300,
 		slidesToShow: 3,
@@ -51,9 +52,9 @@ export default function QuotesBoxSlider() {
 
 	return (
 		<div className={`${styles.QuoteBox}`}>
-			<Slider {...settings}>
+			<Slider className="container" {...settings}>
 				{data.map((item) => (
-					<div key={item.id}>
+					<div  key={item.id}>
 						<p>{item.company}</p>
 						<p>{item.name}</p>
 						<p>{item.quotes}</p>
