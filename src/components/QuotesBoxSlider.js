@@ -62,17 +62,21 @@ export default function QuotesBoxSlider() {
 
 	return (
 		<div className={`${styles.QuoteBox} section_spacing`}>
+			<h4 className="PrimaryColor">Success stories </h4>
+			<p>From our happy patrons</p>
 			<Slider {...settings} className={`${styles.Slider}`}>
 				{data.map((item) => (
 					<div key={item.id} className={`${styles.Flex}`}>
 						<Image src={item.quotesImg} width={39} alt="" />
-						<div><p>{item.quotes}</p></div>
-						
+						<div>
+							<p>{item.quotes}</p>
+						</div>
+
 						<div>
 							<div className={`${styles.flexClm}`}>
 								{" "}
 								<p>{item.name}</p>
-								<p>{item.company}</p>
+								<p className="PrimaryColor">{item.company}</p>
 							</div>
 
 							<Image src={item.img} width={75} height={40} alt="" />

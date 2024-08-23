@@ -22,7 +22,25 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+h1 {
+	font-size: 120px;
+}
 
+h2 {
+	font-size: 100px;
+}
+h3 {
+	font-size: 64px;
+}
+h4 {
+	font-size: 44px;
+}
+h5 {
+	font-size: 28px;
+}
+p {
+	font-size: 24px;
+}
 h1,
 h2,
 h3,
@@ -53,13 +71,30 @@ section {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.slick-dots li {
+	margin: 0 30px !important;
+}
+.slick-track {
+	display: flex !important;
+	gap: 20px !important;
+}
+.slick-dots li button:before {
+	background-color: var(--color_primary);
+	width: 3rem !important;
+	height: 0.5rem !important;
+	text-indent: -9999px;
+	overflow: hidden;
+	:hover {
+		background-color: var(--color-primary) !important;
+	}
+}
 
 .container {
 	@extend .container-fluid;
 	margin: 0 auto;
 	width: var(--container_width);
 }
-.orangetxt {
+.orangetext {
 	color: var(--color-primary);
 }
 .PrimaryColor {

@@ -21,11 +21,11 @@ export default function ValueFirstRow() {
 	return (
 		<div className={`${styles.container} `}>
 			<div>
-				<h1>
+				<h4>
 					What makes us the
 					<span className="orangetxt">Multicultural Marketing Mavericks?</span>
-				</h1>
-				
+				</h4>
+
 				<p>
 					We go the distance between conversations and conversions through forging
 					lasting connections.
