@@ -3,7 +3,7 @@
 .GlobalSpanning {
 	position: relative;
 
-	div:nth-child(2) {
+	.BackGroundWorld {
 		@extend %d_flex;
 		justify-content: center;
 	}

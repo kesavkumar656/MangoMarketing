@@ -19,11 +19,11 @@ export default function CountryComp(props) {
 	return (
 		<div className={`${styles.CountryComp}`}>
 			<div>
-				<Image  src={props.countryImage} alt=""></Image>
+				<Image src={props.countryImage} alt=""></Image>
 			</div>
 			<div>
-				<h1>{props.countryName}</h1>
-				<h5>{props.ProjectNo}</h5>
+				<h6 className="">{props.countryName}</h6>
+				<h6 className="text_reg">{props.ProjectNo}</h6>
 			</div>
 		</div>
 	);

@@ -27,7 +27,7 @@ export default function GlobalSpanning() {
 			<div className={`${styles.lineOneh1}`}>
 				<h1>A global network spanning</h1>
 			</div>
-			<div>
+			<div className={`${styles.BackGroundWorld}`}>
 				<Image src={World} alt=""></Image>
 			</div>
 			<div className={`${styles.justifycenter} `}>
