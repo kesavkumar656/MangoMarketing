@@ -5,6 +5,84 @@
 
 	// @extend %f_c_j_center;
 	color: var(--color_black);
-	background-color: var(--color_primary_contrast);
 	// padding: 140px;
+	background-color: var(--color_primary_contrast);
+}
+@mixin xxxs-down {
+	@media (max-width: #{$xxxs - 1px}) {
+		@content;
+	}
+}
+
+@mixin xxs-down {
+	@media (max-width: #{$xxs - 1px}) {
+		@content;
+	}
+}
+
+@mixin xs-down {
+	@media (max-width: #{$xs - 1px}) {
+		@content;
+	}
+}
+
+@mixin sm-down {
+	@media (max-width: #{$sm - 1px}) {
+		@content;
+	}
+}
+
+@mixin md-down {
+	@media (max-width: #{$md - 1px}) {
+		@content;
+	}
+}
+
+@mixin mdl-down {
+	@media (max-width: #{$mdl - 1px}) {
+		@content;
+	}
+}
+
+@mixin lg-down {
+	@media (max-width: #{$lg - 1px}) {
+		@content;
+	}
+}
+
+@mixin xl-down {
+	@media (max-width: #{$xl - 1px}) {
+		@content;
+	}
+}
+
+@mixin xxl-down {
+	@media (max-width: #{$xxl - 1px}) {
+		@content;
+	}
+}
+
+@mixin xxxl-down {
+	@media (max-width: #{$xxxl - 1px}) {
+		@content;
+	}
+}
+
+// Viewport only
+@mixin sm-only {
+	@media (min-width: #{$xs}) and (max-width: #{$sm - 1px}) {
+		@content;
+	}
+}
+
+@mixin md-only {
+	@media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
+		@content;
+	}
+}
+
+@mixin lg-only {
+	@media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+		@content;
+	}
 }

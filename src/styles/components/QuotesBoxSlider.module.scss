@@ -1,71 +1,95 @@
 @import "../helpers/helpers.scss";
 .QuoteBox {
 	// margin: 10px;
-	div {
-		border-radius: 30px;
-		background-color: var(--color_primary_dark);
+	// Carousel.module.scss
 
-		margin: 0 auto;
+	.slick-slide {
+		padding: 10px;
+		background-color: #f5f5f5;
+		border-radius: 10px;
+	}
 
-		border: 1px solid var(--color_border);
+	.slick-dots {
+		li {
+			&.slick-active button {
+				background-color: red;
+			}
+
+			button {
+				background-color: blue;
+			}
+		}
 	}
 }
-.slick-dots {
-	position: absolute;
-	bottom: -45px;
-	list-style: none;
-	display: block;
-	text-align: center;
-	padding: 0;
-	width: 100%;
+
+.Slider {
+	@extend %f_r_aj_center;
 }
-.slick-dots li {
-	position: relative;
-	display: inline-block;
-	height: 20px;
-	width: 20px;
-	margin: 0 5px;
-	padding: 0;
-	cursor: pointer;
+.slick-slide {
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: #f2f2f2; /* Optional background color */
+	padding: 10px; /* Optional padding */
 }
-.slick-dots li button {
-	border: 0;
-	background: white;
-	display: block;
-	height: 20px;
-	width: 100px;
-	outline: none;
-	line-height: 0;
-	font-size: 0;
-	color: transparent;
-	padding: 5px;
-	cursor: pointer;
+.Flex {
+	border: 2px solid var(--color_border);
+	padding: 30px;
+	border-radius: 20px;
+	margin: 20px;
+	@extend %d_flex;
+	justify-content: space-around;
+	gap: 20px;
+	div {
+		@extend %d_flex;
+		padding: 15px 0;
+		align-items: center;
+		justify-content: space-between;
+		.flexClm {
+			align-items: baseline;
+			@extend %f_d_column;
+			.Clogo {
+				width: 75px;
+				height: 40px;
+			}
+		}
+	}
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-	outline: none;
-}
-.slick-track {
-	height: 100px !important;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-	opacity: 1;
-}
-.slick-dots li button:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "-";
-	width: 20px;
-	height: 20px;
-	font-family: "slick";
-	font-size: 6px;
-	line-height: 5px;
-	text-align: center;
-	color: rgb(123, 255, 0);
-	opacity: 0.25;
-}
+// .QuotesSliderContainer {
+// 	width: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	padding: 150px;
+// 	overflow: hidden;
+// 	div {
+// 		gap: 20px;
+// 	}
+// 	div:nth-child(2) {
+// 		display: flex;
+// 	}
+
+// 	button {
+// 		height: 1px;
+// 		width: 30px;
+// 	}
+// 	button:active,
+// 	button:hover {
+// 		background-color: var(--color_primary);
+// 	}
+// }
+// .buttonDivQuotesBox {
+// 	margin: 10px;
+// 	display: flex;
+// 	gap: 3px;
+// }
+// .QuotesSliderContainer {
+// }
+
+// .slider {
+// 	img {
+// 		z-index: 4;
+// 	}
+// }
 
 // .QuotesSliderContainer {
 // 	width: 100%;
