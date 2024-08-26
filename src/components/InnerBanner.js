@@ -29,7 +29,7 @@ function InnerBanner({
 		const imageAnimation = gsap.timeline();
 
 		if (isDesktop) {
-			imageAnimation.to(bannerImg, { scale: 1.5 }, "first" );
+			imageAnimation.to(bannerImg, { scale: 1.5 }, "first");
 
 			ScrollTrigger.create({
 				animation: imageAnimation,
@@ -44,7 +44,7 @@ function InnerBanner({
 	}, []);
 
 	return (
-		<div className={styles.inner_banner_wrap}>
+		<div className={`${styles.inner_banner_wrap} container`}>
 			<div className={styles.banner_image_wrapper}>
 				{/* Banner Image */}
 				<div className={styles.banner_image} ref={bannerImgRef}>

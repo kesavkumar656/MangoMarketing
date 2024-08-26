@@ -1,9 +1,7 @@
 @import "../helpers/helpers.scss";
 .AnimatedSlider {
-	width: 100%;
 	overflow: hidden;
-	white-space: nowrap;
-	box-sizing: border-box;
+
 	div {
 		@extend %f_r_aj_center;
 
@@ -13,13 +11,13 @@
 }
 .Slide_div1 {
 	gap: 10px;
-	display: inline-block;
+	display: flex;
 
 	animation: LinearEffect 10s linear infinite;
 }
 .Slide_div2 {
 	gap: 10px;
-	display: inline-block;
+	display: flex;
 
 	animation: LinearEffectRight 10s linear infinite;
 }

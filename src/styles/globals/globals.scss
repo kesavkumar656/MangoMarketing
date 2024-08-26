@@ -38,11 +38,11 @@ h4 {
 h5 {
 	font-size: 35px;
 }
-h6{
+h6 {
 	font-size: 28px;
 }
 p {
-	font-size: 24px;
+	font-size: 20px;
 }
 h1,
 h2,
@@ -88,7 +88,7 @@ section {
 	text-indent: -9999px;
 	overflow: hidden;
 	:hover {
-		background-color: var(--color-primary) !important;
+		background-color: var(--color_primary) !important;
 	}
 }
 
@@ -97,9 +97,7 @@ section {
 	margin: 0 auto;
 	width: var(--container_width);
 }
-.orangetext {
-	color: var(--color-primary);
-}
+
 .PrimaryColor {
 	color: var(--color_primary) !important ;
 	opacity: 1 !important;

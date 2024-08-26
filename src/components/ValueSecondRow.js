@@ -23,7 +23,7 @@ import Button1 from "./Buttons/Button1.jsx";
 /** ValueSecondRow Component */
 export default function ValueSecondRow() {
 	return (
-		<div className={`${styles.ValueRowTwoContainer}`}>
+		<div className={`${styles.ValueRowTwoContainer} container section_spacing`}>
 			<div className={`${styles.LineOne}`}>
 				<p>
 					Values we <span className="PrimaryColor">swear by</span>

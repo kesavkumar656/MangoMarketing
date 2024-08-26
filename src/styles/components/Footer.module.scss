@@ -2,8 +2,7 @@
 
 .main_footer {
 	// height: 100px;
-	@extend %d_flex;
-	@extend %align_item_center;
+	@extend %f_r_aj_center;
 	justify-content: space-between;
 
 	p {

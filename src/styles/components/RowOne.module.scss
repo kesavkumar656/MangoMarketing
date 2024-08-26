@@ -2,36 +2,42 @@
 
 .RowOne {
 	// padding: 5%;
-	@extend %f_r_a_center;
-	justify-content: space-around;
+
+	justify-content: space-between;
 	p {
 		font-weight: 100;
 	}
 
 	.wrapper {
-		width: 80%;
 		display: flex;
-		
+		justify-content: space-around;
+		align-items: center;
 	}
 }
+.TextDiv {
+	width: 40%;
+	
+}
 .imageDiv {
-	display: flex;
+	position: relative;
+	@extend %d_flex;
 
-	width: 100%;
-	height: 40vh;
-	gap: 50px;
+	width: 50%;
+	height: 500px;
 	justify-content: center;
 	div:nth-child(1) {
-		width: 200px;
-		align-self: center;
+		position: absolute;
+		left: 0px;
+		bottom: 20px;
 	}
 	div:nth-child(2) {
 		position: absolute;
-		width: 200px;
-		align-self: flex-start;
+		z-index: 10;
+		top: -30px;
 	}
 	div:nth-child(3) {
-		width: 200px;
-		align-self: flex-end;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 }

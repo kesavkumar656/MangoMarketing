@@ -21,12 +21,12 @@ import Img1 from "@/../public/img/assets/scrollEffectImg.png";
 /** ScrollEffectTitle Component */
 export default function ScrollEffectTitle() {
 	return (
-		<div className={`${styles.ScrollEffectTitle}`}>
-			<div className="">
-				<p>
-					Different cultures, diverse consumer languages <br />{" "}
-					<span className="PrimaryColor">We speak them all</span>{" "}
-				</p>
+		<div className={`${styles.ScrollEffectTitle} section_spacing container`}>
+			<div>
+				<h4>
+					Different cultures, diverse consumer languages <br />
+					<span>We speak them all</span>
+				</h4>
 			</div>
 			<div className="d_flex">
 				<Image alt="" src={Img1}></Image>

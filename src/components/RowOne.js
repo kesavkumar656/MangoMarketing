@@ -20,9 +20,9 @@ import img3 from "@/../public/img/assets/img3.png";
 /** RowOne Component */
 export default function RowOne() {
 	return (
-		<div className={`${styles.RowOne} `}>
+		<div className={`${styles.RowOne} container `}>
 			<div className={`${styles.wrapper} `}>
-				<div>
+				<div className={`${styles.TextDiv}  `}>
 					<h5 className="color_white">
 						Connect with their <span className="PrimaryColor">interests </span>
 						Resonate with their <span className="PrimaryColor">sentiment </span>{" "}
@@ -36,14 +36,14 @@ export default function RowOne() {
 				</div>
 				<div className={styles.imageDiv}>
 					<div>
-						<Image src={img1} alt="Arrow" />
+						<Image src={img1} alt="img1" />
 					</div>
 
 					<div>
-						<Image src={img2} alt="Arrow" />
+						<Image src={img2} alt="img2" />
 					</div>
 					<div>
-						<Image src={img3} alt="Arrow" />
+						<Image src={img3} alt="img3" />
 					</div>
 				</div>
 			</div>

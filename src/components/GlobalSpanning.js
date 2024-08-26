@@ -23,14 +23,14 @@ import CountryComp from "./CountryComp";
 /** GlobalSpanning Component */
 export default function GlobalSpanning() {
 	return (
-		<div className={`${styles.GlobalSpanning}`}>
-			<div className={`${styles.lineOneh1}`}>
+		<div className={`${styles.GlobalSpanning} container`}>
+			<div className={`${styles.lineOneh1} container`}>
 				<h1>A global network spanning</h1>
 			</div>
 			<div className={`${styles.BackGroundWorld}`}>
 				<Image src={World} alt=""></Image>
 			</div>
-			<div className={`${styles.justifycenter} `}>
+			<div className={`${styles.justifycnter} `}>
 				<CountryComp
 					countryImage={India}
 					countryName="India"

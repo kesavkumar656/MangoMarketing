@@ -19,7 +19,7 @@ import Img2 from "public/img/assets/Value_img2.png";
 /** ValueFirstRow Component */
 export default function ValueFirstRow() {
 	return (
-		<div className={`${styles.container} `}>
+		<div className={`${styles.container} container  `}>
 			<div>
 				<h4>
 					What makes us the
@@ -32,11 +32,21 @@ export default function ValueFirstRow() {
 				</p>
 			</div>
 			<div className={`${styles.ImageWrapper} `}>
-				<div>
-					<Image alt="" src={Img1}></Image>
-					<div className={styles.OverlapImg}>
-						<Image src={Img2} alt="" />
-					</div>
+				<Image
+					className="next_cover_image"
+					alt=""
+					width={1024}
+					height={400}
+					src={Img1}
+				></Image>
+				<div className={styles.OverlapImg}>
+					<Image
+						className="next_cover_image"
+						src={Img2}
+						width={200}
+						height={220}
+						alt=""
+					/>
 				</div>
 			</div>
 		</div>

@@ -1,24 +1,22 @@
 @import "../helpers/helpers.scss";
 
 .ScrollEffectTitle {
-	@extend %f_clm;
+	// margin: 0 auto;
 
-	width: 100%;
-	// align-items: flex-start;
 	color: var(--color-white) !important ;
 	// padding: 50px;
-	height: auto;
-	// justify-content: center;
-	gap: 50px;
+
+	// gap: 50px;
 	h1 {
 		font-size: var(--font-size-xl);
 	}
 	div:nth-child(2) {
-		display: flex;
+		// margin: 0 auto;
+		@extend %d_flex;
 		align-items: flex-start;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	p {
-		padding: 0 20px 0 20px;
+		// padding: 0 20px 0 20px;
 	}
 }

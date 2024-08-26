@@ -22,7 +22,7 @@ import SuccessStorySection from "../src/sections/SuccessStorySection";
 // IMAGES //
 
 // DATA //
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 /** Home Page */
 export default function HomePage() {

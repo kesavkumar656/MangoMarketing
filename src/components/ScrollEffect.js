@@ -22,13 +22,13 @@ import Img1 from "@/../public/img/assets/scrollEffectImg.png";
 export default function ScrollEffect({ gsap, ScrollTrigger }) {
 	useEffect(() => {
 		const container = document.querySelector(`.${styles.ScrollEffect}`);
-		const h1s = container.querySelectorAll("h1");
+		const span = container.querySelectorAll("span");
 
-		h1s.forEach((h1, index) => {
-			gsap.to(h1, {
+		span.forEach((span, index) => {
+			gsap.to(span, {
 				autoAlpha: 1,
 				scrollTrigger: {
-					trigger: h1,
+					trigger: span,
 					start: "top bottom-=100",
 					toggleActions: "play none none reverse",
 					// markers: true
@@ -36,11 +36,11 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 			});
 
 			ScrollTrigger.create({
-				trigger: h1,
+				trigger: span,
 				start: "top center",
 				end: "+=50px",
 				toggleActions: "play reverse none reverse",
-				toggleClass: { targets: h1, className: "PrimaryColor" },
+				toggleClass: { targets: span, className: "PrimaryColor" },
 				// markers: true,
 			});
 		});
@@ -49,16 +49,33 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 	return (
 		<div className={`${styles.ScrollEffect}`}>
 			<div>
-				<h1>Brand Strategy</h1>
-				<h1>Social Media Marketing</h1>
-				<h1>Influencer Marketing</h1>
-				<h1>Public Relations</h1>
-				<h1>Content Relations</h1>
-				<h1>Promotional Staffing</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
-				<h1>Brand Strategy</h1>
+				<span>
+					<h3>Brand Strategy</h3>
+				</span>
+
+				<span>
+					<h3>Influencer Marketing</h3>
+				</span>
+				<span>
+					<h3>Public Relations</h3>
+				</span>
+				<span>
+					
+					<h3>Content Relations</h3>
+				</span>
+				<span>
+					<h3>Promotional Staffing</h3>
+				</span>
+
+				<span>
+					<h3>Brand Strategy</h3>
+				</span>
+				<span>
+					<h3>Brand Strategy</h3>
+				</span>
+				<span>
+					<h3>Brand Strategy</h3>
+				</span>
 			</div>
 		</div>
 	);

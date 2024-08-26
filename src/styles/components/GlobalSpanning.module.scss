@@ -1,7 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .GlobalSpanning {
-	position: relative;
+	@extend %relative_box;
 
 	.BackGroundWorld {
 		@extend %d_flex;
@@ -13,10 +13,7 @@
 	}
 }
 .justifycenter {
-	bottom: 0;
-	right: 0;
-	transform: translate(-10%, -150%);
-	position: absolute;
+	@extend %rel_xy_center;
 }
 .lineOneh1 {
 	font-size: 80px;

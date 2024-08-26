@@ -25,10 +25,10 @@ import ScrollEffectTitle from "../components/ScrollEffectTitle";
 export default function HomeHero() {
 	return (
 		<div className={`${styles.hero_wrap} text_xl container   `}>
-			<h1>
+			<h2 className="text_center">
 				Think you know your <span className="PrimaryColor">audience</span> across
 				cultures?
-			</h1>
+			</h2>
 
 			<InnerBanner gsap={gsap} ScrollTrigger={ScrollTrigger}></InnerBanner>
 			<RowOne></RowOne>

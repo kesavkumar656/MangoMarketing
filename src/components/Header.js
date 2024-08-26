@@ -101,12 +101,16 @@ export default function Header() {
 						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Services</div>
+								<div className={styles.link_title}>
+									<p>Services</p>
+								</div>
 							</Link>
 						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Edge</div>
+								<div className={styles.link_title}>
+									<p>Edge</p>{" "}
+								</div>
 							</Link>
 						</div>
 						<div className={styles.links}>

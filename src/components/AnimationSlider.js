@@ -28,6 +28,9 @@ import logo10 from "@/../public/img/assets/LogoAnimation/img10.png";
 export default function AnimationSlider() {
 	return (
 		<div className={`${styles.AnimatedSlider} `}>
+			<h4 className="text_center">
+				Our brands at a <span className="PrimaryColor ">glance</span>
+			</h4>
 			<div className={`${styles.Slide_div1} `}>
 				<Image src={logo1}></Image>
 
