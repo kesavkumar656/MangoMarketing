@@ -21,7 +21,7 @@ import Img1 from "@/../public/img/assets/scrollEffectImg.png";
 /** ScrollEffectTitle Component */
 export default function ScrollEffectTitle() {
 	return (
-		<div className={`${styles.ScrollEffectTitle} section_spacing container`}>
+		<div className={`${styles.ScrollEffectTitle}  `}>
 			<div>
 				<h4>
 					Different cultures, diverse consumer languages <br />

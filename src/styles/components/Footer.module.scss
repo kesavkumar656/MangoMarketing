@@ -1,7 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-	border: 1px solid;
+	border: 1px solid rgba(0, 0, 0, 0.308);
 
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -15,7 +15,7 @@
 	}
 	.logoContainer {
 		gap: 15px;
-		border-right: 1px solid grey;
-		border-left: 1px solid grey;
+		border-right: 1px solid rgba(128, 128, 128, 0.322);
+		border-left: 1px solid rgba(128, 128, 128, 0.295);
 	}
 }
