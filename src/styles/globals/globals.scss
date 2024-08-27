@@ -74,23 +74,6 @@ section {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.slick-dots li {
-	margin: 0 30px !important;
-}
-.slick-track {
-	display: flex !important;
-	gap: 20px !important;
-}
-.slick-dots li button:before {
-	background-color: var(--color_primary);
-	width: 3rem !important;
-	height: 0.5rem !important;
-	text-indent: -9999px;
-	overflow: hidden;
-	:hover {
-		background-color: var(--color_primary) !important;
-	}
-}
 
 .container {
 	@extend .container-fluid;
@@ -102,7 +85,23 @@ section {
 	color: var(--color_primary) !important ;
 	opacity: 1 !important;
 }
+.AnimationGsap {
+	color: var(--color_primary) !important ;
+	opacity: 1 !important;
+	transition: var(--transition);
+	transform: translateX(30px);
+	animation: LinearEffectRight 10s linear infinite;
+}
 
+
+@keyframes LinearEffect {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -171,5 +170,22 @@ section {
 .objectFitCover {
 	img {
 		object-fit: cover !important;
+	}
+}
+.slick-dots li {
+	margin: 0 30px !important;
+}
+.slick-track {
+	display: flex !important;
+	gap: 20px !important;
+}
+.slick-dots li button:before {
+	background-color: var(--color_primary);
+	width: 3rem !important;
+	height: 0.5rem !important;
+	text-indent: -9999px;
+	overflow: hidden;
+	:hover {
+		background-color: var(--color_primary) !important;
 	}
 }

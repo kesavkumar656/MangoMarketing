@@ -2,7 +2,7 @@
 
 .GlobalSpanning {
 	@extend %relative_box;
-
+	
 	.BackGroundWorld {
 		@extend %d_flex;
 		justify-content: center;
@@ -13,7 +13,7 @@
 	}
 }
 .justifycenter {
-	@extend %rel_xy_center;
+	// @extend %rel_xy_center;
 }
 .lineOneh1 {
 	font-size: 80px;

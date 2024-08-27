@@ -23,8 +23,8 @@ import Button1 from "./Buttons/Button1.jsx";
 /** ValueSecondRow Component */
 export default function ValueSecondRow() {
 	return (
-		<div className={`${styles.ValueRowTwoContainer} container section_spacing`}>
-			<div className={`${styles.LineOne}`}>
+		<div className={`${styles.ValueRowTwoContainer} section_spacing  `}>
+			<div className={`${styles.LineOne}  `}>
 				<p>
 					Values we <span className="PrimaryColor">swear by</span>
 				</p>
@@ -37,12 +37,15 @@ export default function ValueSecondRow() {
 				<div className={`${styles.ValueImg}`}>
 					<div>
 						<Image src={Img1} alt=""></Image>
+						<p>Integrity</p>
 					</div>
 					<div>
 						<Image src={Img2} alt=""></Image>
+						<p>Trust</p>
 					</div>
 					<div>
 						<Image src={Img3} alt=""></Image>
+						<p>Teamwork</p>
 					</div>
 				</div>
 			</div>

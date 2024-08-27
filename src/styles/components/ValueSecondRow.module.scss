@@ -3,6 +3,7 @@
 .ValueRowTwoContainer {
 	.LineOne {
 		display: flex;
+		padding: 1%;
 		justify-content: space-between;
 		// padding: 10px 10px 20px 30px;
 		div {
@@ -18,7 +19,6 @@
 			border-radius: 50%;
 			background-color: transparent;
 			border: 2px solid black;
-			
 		}
 		button:active {
 			background-color: var(--color_primary);
@@ -32,12 +32,12 @@
 	display: flex;
 	border: 1px solid;
 	div {
-		justify-content: center;
 		align-items: center;
 		padding: 100px;
+		flex-direction: column;
+		gap: 30px;
 		display: flex;
 		width: 100%;
-
 		border: 1px solid black;
 	}
 }

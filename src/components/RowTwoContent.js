@@ -22,7 +22,7 @@ export default function RowTwoContent() {
 			<div className={`${styles.RowTwoContainer} container section_spacing `}>
 				<div className={`${styles.R2wrapper} container `}>
 					<div className="text_xxxxl text_300">
-						Say hello <span className="PrimaryColor">to</span> <br /> Mango Marketing!
+						Say hello <span className="PrimaryColor">to</span> <br className={styles.break} /> Mango Marketing!
 					</div>
 					<div className={`${styles.RowTwo} `}>
 						<Image src={Bridge} alt="" />

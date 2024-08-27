@@ -23,8 +23,8 @@ import CountryComp from "./CountryComp";
 /** GlobalSpanning Component */
 export default function GlobalSpanning() {
 	return (
-		<div className={`${styles.GlobalSpanning} container`}>
-			<div className={`${styles.lineOneh1} container`}>
+		<div className={`${styles.GlobalSpanning} section_spacing `}>
+			<div className={`${styles.lineOneh1} `}>
 				<h1>A global network spanning</h1>
 			</div>
 			<div className={`${styles.BackGroundWorld}`}>

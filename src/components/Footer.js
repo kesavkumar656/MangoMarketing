@@ -13,7 +13,6 @@ import styles from "@/styles/components/Footer.module.scss";
 
 // IMAGES //
 import MadeByTingIMG from "@/../public/img/MadeByTing.png";
-import INSTA from "@/../public/img/icons/social/insta.svg";
 
 // DATA //
 const logo = [
@@ -26,11 +25,11 @@ const logo = [
 /** Footer Component */
 export default function Footer() {
 	return (
-		<footer className={`{${styles.main_footer} container `}>
+		<footer className={`${styles.main_footer} container`}>
 			<div>
 				<p>© {new Date().getFullYear()} Copyright Mango Marketing & Events.</p>
 			</div>
-			<div className="slick-track">
+			<div >
 				{logo.map((data, index) => (
 					<div key={index}>
 						<a href="">

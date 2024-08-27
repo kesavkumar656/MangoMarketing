@@ -20,8 +20,10 @@ import { Form } from "react-hook-form";
 export default function ContactUs() {
 	return (
 		<div className={`${styles.ContactUs}`}>
-			<div>
-				<h1>Let’s Mango the extra mile</h1>
+			<div className={`${styles.ColumnOne}`}>
+				<h1>
+					Let’s Mango the <span className="PrimaryColor">extra mile</span>{" "}
+				</h1>
 				<p>in multicultural marketing. Reach out to us today!</p>
 			</div>
 			<div>

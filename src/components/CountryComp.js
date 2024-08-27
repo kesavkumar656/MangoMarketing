@@ -17,7 +17,7 @@ import styles from "@/styles/components/CountryComp.module.scss";
 /** CountryComp Component */
 export default function CountryComp(props) {
 	return (
-		<div className={`${styles.CountryComp} container`}>
+		<div className={`${styles.CountryComp} container `}>
 			<div>
 				<Image src={props.countryImage} alt=""></Image>
 			</div>

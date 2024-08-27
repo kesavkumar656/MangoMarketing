@@ -23,7 +23,7 @@ export default function ValueFirstRow() {
 			<div>
 				<h4>
 					What makes us the
-					<span className="orangetxt">Multicultural Marketing Mavericks?</span>
+					<span className="PrimaryColor"> Multicultural Marketing Mavericks?</span>
 				</h4>
 
 				<p>
@@ -33,7 +33,7 @@ export default function ValueFirstRow() {
 			</div>
 			<div className={`${styles.ImageWrapper} `}>
 				<Image
-					className="next_cover_image"
+					className="objectFitCover"
 					alt=""
 					width={1024}
 					height={400}
@@ -41,7 +41,7 @@ export default function ValueFirstRow() {
 				></Image>
 				<div className={styles.OverlapImg}>
 					<Image
-						className="next_cover_image"
+						className="objectFitCover"
 						src={Img2}
 						width={200}
 						height={220}

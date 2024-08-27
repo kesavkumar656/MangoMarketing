@@ -3,15 +3,20 @@
 	// margin: 50px auto;
 	margin: 5% auto;
 	line-height: 1.3;
-}
-.RowTwo {
-	// width: 60%;
-	gap: 20px;
-	margin: 0 auto;
+	.break {
+		@include xl-down {
+			display: none;
+		}
+	}
+	.RowTwo {
+		// width: 60%;
+		gap: 20px;
+		margin: 0 auto;
 
-	@extend %f_r_a_center;
-}
-.R2wrapper {
-	width: 60%;
-	margin: 0 auto;
+		@extend %f_r_a_center;
+	}
+	.R2wrapper {
+		width: 60%;
+		margin: 0 auto;
+	}
 }
