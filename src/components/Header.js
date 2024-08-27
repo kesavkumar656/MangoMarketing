@@ -41,9 +41,9 @@ export default function Header() {
 		<div
 			className={`${styles.main_header} ${
 				openSidebar ? styles.sidebar_opened : ""
-			}`}
+			} container-fluid`}
 		>
-			<div className={`${styles.links_wrap} container`}>
+			<div className={`${styles.links_wrap} `}>
 				<div className={`${styles.header_inside}`}>
 					{/* Logo wrap */}
 					<Link href="/">

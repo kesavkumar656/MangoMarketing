@@ -44,22 +44,24 @@ function InnerBanner({
 	}, []);
 
 	return (
-		<div className={`${styles.inner_banner_wrap} container`}>
-			<div className={styles.banner_image_wrapper}>
-				{/* Banner Image */}
-				<div className={styles.banner_image} ref={bannerImgRef}>
-					<picture>
-						<source srcSet={desktopImage} media="(min-width:767px)" />
-						<img
-							className={styles.banner_image}
-							src={mobileImage}
-							alt="Banner Image"
-						/>
-					</picture>
+		<section>
+			<div className={`${styles.inner_banner_wrap} container`}>
+				<div className={styles.banner_image_wrapper}>
+					{/* Banner Image */}
+					<div className={styles.banner_image} ref={bannerImgRef}>
+						<picture>
+							<source srcSet={desktopImage} media="(min-width:767px)" />
+							<img
+								className={styles.banner_image}
+								src={mobileImage}
+								alt="Banner Image"
+							/>
+						</picture>
+					</div>
 				</div>
+				{/* Banner Content */}
 			</div>
-			{/* Banner Content */}
-		</div>
+		</section>
 	);
 }
 

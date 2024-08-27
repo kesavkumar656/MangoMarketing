@@ -1,12 +1,12 @@
 @import "../helpers/helpers.scss";
 
 .main_header {
-	@extend %f_r_aj_center;
+	// @extend %f_r_aj_center;
 	position: sticky;
 
 	padding-top: 30px;
 	padding-bottom: 10px;
-	width: 100%;
+	width: var(--container-width);
 	z-index: 20;
 	top: 0;
 
