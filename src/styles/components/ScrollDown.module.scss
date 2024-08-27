@@ -1,0 +1,6 @@
+@import "../helpers/helpers.scss";
+.ArrowDown {
+	@extend %f_r_aj_center;
+	gap: 20px;
+	padding: 0% 0% 10% 5%;
+}

@@ -61,7 +61,7 @@ export default function QuotesBoxSlider() {
 	};
 
 	return (
-		<div className={`${styles.QuoteBox} section_spacing`}>
+		<div className={`${styles.QuoteBox} `}>
 			<h4 className="PrimaryColor">Success stories </h4>
 			<p>From our happy patrons</p>
 			<Slider {...settings} className={`${styles.Slider}`}>

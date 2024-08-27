@@ -30,7 +30,7 @@ export default function GlobalSpanning() {
 			<div className={`${styles.BackGroundWorld}`}>
 				<Image src={World} alt=""></Image>
 			</div>
-			<div className={`${styles.justifycnter} `}>
+			<div className={`${styles.justifycenter} `}>
 				<CountryComp
 					countryImage={India}
 					countryName="India"

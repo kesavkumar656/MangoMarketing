@@ -31,7 +31,7 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 					trigger: h3,
 					start: "top bottom-=100",
 					toggleActions: "play none none reverse",
-					// markers: true
+					markers: true
 				},
 			});
 

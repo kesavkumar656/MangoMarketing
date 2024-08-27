@@ -15,29 +15,34 @@
 	}
 }
 .TextDiv {
-	width: 40%;
-	
+	width: 50%;
 }
 .imageDiv {
 	position: relative;
 	@extend %d_flex;
 
-	width: 50%;
-	height: 500px;
+	width: 40%;
+	height: 300px;
 	justify-content: center;
 	div:nth-child(1) {
 		position: absolute;
 		left: 0px;
 		bottom: 20px;
+		max-width: 200px;
+		min-width: 100px;
 	}
 	div:nth-child(2) {
 		position: absolute;
 		z-index: 10;
 		top: -30px;
+		max-width: 200px;
+		min-width: 100px;
 	}
 	div:nth-child(3) {
 		position: absolute;
 		right: 0;
+		max-width: 200px;
+		min-width: 100px;
 		bottom: 0;
 	}
 }

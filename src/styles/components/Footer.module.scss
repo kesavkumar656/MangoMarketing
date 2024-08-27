@@ -1,20 +1,21 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-	padding: 1%;
-	// height: 100px;
-	display: flex;
-	justify-content: space-between;
+	border: 1px solid;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
 
 	p {
 		font-size: 16px;
 	}
 	div {
-		
 		@extend %d_flex;
 		justify-content: center;
 	}
-	div:nth-child(2) {
+	.logoContainer {
 		gap: 15px;
+		border-right: 1px solid grey;
+		border-left: 1px solid grey;
 	}
 }

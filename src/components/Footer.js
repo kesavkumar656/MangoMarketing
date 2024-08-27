@@ -29,7 +29,7 @@ export default function Footer() {
 			<div>
 				<p>© {new Date().getFullYear()} Copyright Mango Marketing & Events.</p>
 			</div>
-			<div >
+			<div className={`${styles.logoContainer}`}>
 				{logo.map((data, index) => (
 					<div key={index}>
 						<a href="">

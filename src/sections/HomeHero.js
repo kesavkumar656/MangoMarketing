@@ -17,6 +17,7 @@ import RowOne from "../components/RowOne";
 import RowTwoContent from "../components/RowTwoContent";
 import AnimationSlider from "../components/AnimationSlider";
 import ScrollEffectTitle from "../components/ScrollEffectTitle";
+import ScrollDown from "../components/ScrollDown";
 // IMAGES //
 
 // DATA //
@@ -31,6 +32,7 @@ export default function HomeHero() {
 			</h2>
 
 			<InnerBanner gsap={gsap} ScrollTrigger={ScrollTrigger}></InnerBanner>
+			<ScrollDown></ScrollDown>
 			<RowOne></RowOne>
 			<RowTwoContent></RowTwoContent>
 			<AnimationSlider></AnimationSlider>
