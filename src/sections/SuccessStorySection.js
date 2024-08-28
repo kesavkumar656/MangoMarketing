@@ -22,7 +22,7 @@ import ContactUs from "../components/ContactUs";
 export default function SuccessStorySection() {
 	return (
 		<section className={`${styles.SuccessStorySection} container `}>
-			<QuotesBoxSlider></QuotesBoxSlider>
+			<QuotesBoxSlider ></QuotesBoxSlider>
 			<GlobalSpanning></GlobalSpanning>
 			<ContactUs></ContactUs>
 		</section>
