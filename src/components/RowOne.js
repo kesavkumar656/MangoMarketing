@@ -20,7 +20,7 @@ import img3 from "@/../public/img/assets/img3.png";
 /** RowOne Component */
 export default function RowOne() {
 	return (
-		<div className={`${styles.RowOne} `}>
+		<div className={`${styles.RowOne} container`}>
 			<div className={`${styles.wrapper} `}>
 				<div className={`${styles.TextDiv}  `}>
 					<div>

@@ -35,7 +35,7 @@ export default function HomeHero() {
 			<ScrollDown></ScrollDown>
 			<RowOne></RowOne>
 			<RowTwoContent></RowTwoContent>
-			<AnimationSlider></AnimationSlider>
+			<AnimationSlider ></AnimationSlider>
 			<ScrollEffectTitle></ScrollEffectTitle>
 		</div>
 	);
