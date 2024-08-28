@@ -25,7 +25,7 @@ const logo = [
 /** Footer Component */
 export default function Footer() {
 	return (
-		<footer className={`${styles.main_footer} container`}>
+		<footer className={`${styles.main_footer} `}>
 			<div>
 				<p>© {new Date().getFullYear()} Copyright Mango Marketing & Events.</p>
 			</div>
