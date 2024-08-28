@@ -44,7 +44,7 @@ export default function Header() {
 			}  `}
 		>
 			<div className={`${styles.links_wrap}  container `}>
-				<div className={`${styles.header_inside}`}>
+				<div className={`${styles.header_inside} `}>
 					{/* Logo wrap */}
 					<Link href="/">
 						<div className={styles.image_wrap}>

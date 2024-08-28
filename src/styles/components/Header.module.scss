@@ -2,16 +2,18 @@
 
 .main_header {
 	@extend %f_r_aj_center;
-	width: 100%; /* Adjust to ensure it covers the full width */
-	max-width: 1440px; /* Optional: set this to prevent overflow */
+	position: sticky;
+
 	padding-top: 30px;
 	padding-bottom: 10px;
+	width: var(--container-width);
 	z-index: 20;
 	top: 0;
+
 	color: var(--color_white);
-	box-shadow: 0 -6px 10px 5px #f4be69 0.2;
+	box-shadow: 0 -6px 10px 5px (#f4be69 0.2);
 	background-color: var(--color_black);
-	margin: 0 auto; /* Center the header */
+
 	div {
 		&:hover {
 			background-color: (#f4be69 0.1);
@@ -187,11 +189,5 @@
 		.links_wrap {
 			transform: translateX(0) !important;
 		}
-	}
-}
-@media (min-width: 1440px) {
-	.Header_main_header {
-		width: var(--container-width);
-		margin: 0 auto;
 	}
 }
