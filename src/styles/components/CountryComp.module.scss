@@ -1,18 +1,15 @@
 @import "../helpers/helpers.scss";
 .CountryComp {
+	max-width: 350px;
 	display: flex;
 	color: var(--color_black);
 	align-items: center;
-	
+
 	border-radius: 55px;
-	padding: 10px;
+	// padding: 10px;
 	background-color: var(--color_white);
-	justify-content: space-around;
+	justify-content: space-evenly;
 	h1 {
 		color: var(--color_black) !important;
-	}
-	div {
-		display: flex;
-		flex-direction: column;
 	}
 }

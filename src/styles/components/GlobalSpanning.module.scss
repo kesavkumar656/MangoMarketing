@@ -13,7 +13,9 @@
 	}
 }
 .justifycenter {
-	bottom: -5px;
+	position: absolute;
+	width: var(--container_width);
+	bottom: 100px;
 }
 .lineOneh1 {
 	font-size: 80px;
