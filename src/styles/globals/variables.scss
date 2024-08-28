@@ -46,12 +46,10 @@ $browser-prefixes: false !default;
 	@media (min-width: 992px) and (max-width: 1199px) {
 		--container_width: 970px;
 	}
-	@media (min-width: 1200px) {
-	}
-	@media (min-width: 1200px) {
-		--container_width: 1200px;
-	}
 
+	@media (min-width: 1200px) {
+		--container_width: 1170px;
+	}
 	@media (min-width: 1440px) {
 		--container_width: 1440px;
 	}

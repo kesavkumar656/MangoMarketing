@@ -31,14 +31,14 @@ export default function ScrollEffect({ gsap, ScrollTrigger }) {
 					trigger: h3,
 					start: "top bottom-=100",
 					toggleActions: "play none none reverse",
-					markers: true
+					markers: true,
 				},
 			});
 
 			ScrollTrigger.create({
 				trigger: h3,
 				start: "top center",
-				end: "+=50px",
+				end: () => `+=${h3.clientHeight + 20}`,
 				toggleActions: "play reverse none reverse",
 				toggleClass: { targets: h3, className: "AnimationGsap" },
 				// markers: true,
