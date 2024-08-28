@@ -39,14 +39,14 @@ export default function RowOne() {
 					</div>
 				</div>
 				<div className={styles.imageDiv}>
-					<div>
+					<div className={styles.images}>
 						<Image src={img1} alt="img1" width={300} height={400} />
 					</div>
 
-					<div>
+					<div className={styles.images}>
 						<Image src={img2} width={300} height={400} alt="img2" />
 					</div>
-					<div>
+					<div className={styles.images}>
 						<Image src={img3} width={300} height={400} alt="img3" />
 					</div>
 				</div>
