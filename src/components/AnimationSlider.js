@@ -32,62 +32,62 @@ export default function AnimationSlider() {
 				Our brands at a <span className="PrimaryColor ">glance</span>
 			</h4>
 			<div className={`${styles.Slide_div1} `}>
-				<Image src={logo1}></Image>
+				<Image alt="" src={logo1}></Image>
 
-				<Image src={logo2}></Image>
+				<Image alt="" src={logo2}></Image>
 
-				<Image src={logo3}></Image>
+				<Image alt="" src={logo3}></Image>
 
-				<Image src={logo4}></Image>
+				<Image alt="" src={logo4}></Image>
 
-				<Image src={logo5}></Image>
-				<Image src={logo1}></Image>
+				<Image alt="" src={logo5}></Image>
+				<Image alt="" src={logo1}></Image>
 
-				<Image src={logo2}></Image>
+				<Image alt="" src={logo2}></Image>
 
-				<Image src={logo3}></Image>
-
-				<Image src={logo4}></Image>
-
-				<Image src={logo5}></Image>
-				<Image src={logo1}></Image>
-
-				<Image src={logo2}></Image>
-
-				<Image src={logo3}></Image>
+				<Image alt="" src={logo3}></Image>
 
 				<Image src={logo4}></Image>
 
-				<Image src={logo5}></Image>
+				<Image alt="" src={logo5}></Image>
+				<Image alt="" src={logo1}></Image>
+
+				<Image alt="" src={logo2}></Image>
+
+				<Image alt="" src={logo3}></Image>
+
+				<Image alt="" src={logo4}></Image>
+
+				<Image alt="" src={logo5}></Image>
 			</div>
 			<div className={`${styles.Slide_div2} `}>
-				<Image src={logo6}></Image>
+				<Image alt="" src={logo6}></Image>
 
-				<Image src={logo7}></Image>
+				<Image alt="" src={logo7}></Image>
 
-				<Image src={logo8}></Image>
+				<Image alt="" src={logo8}></Image>
 
-				<Image src={logo9}></Image>
+				<Image alt="" src={logo9}></Image>
 
-				<Image src={logo10}></Image>
-				<Image src={logo6}></Image>
+				<Image alt="" src={logo10}></Image>
+				<Image alt="" src={logo6}></Image>
 
-				<Image src={logo7}></Image>
+				<Image alt="" src={logo7}></Image>
 
-				<Image src={logo8}></Image>
+				<Image alt="" src={logo8}></Image>
 
-				<Image src={logo9}></Image>
+				<Image alt="" src={logo9}></Image>
 
-				<Image src={logo10}></Image>
-				<Image src={logo6}></Image>
+				<Image alt="" src={logo10}></Image>
+				<Image alt="" src={logo6}></Image>
 
-				<Image src={logo7}></Image>
+				<Image alt="" src={logo7}></Image>
 
-				<Image src={logo8}></Image>
+				<Image alt="" src={logo8}></Image>
 
-				<Image src={logo9}></Image>
+				<Image alt="" src={logo9}></Image>
 
-				<Image src={logo10}></Image>
+				<Image alt="" src={logo10}></Image>
 			</div>
 		</div>
 	);

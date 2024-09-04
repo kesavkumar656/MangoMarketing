@@ -12,11 +12,18 @@
 
 	color: var(--color_white);
 	box-shadow: 0 -6px 10px 5px (#f4be69 0.2);
-	background-color: var(--color_black);
 
-	div {
+	@include sm-down {
+		display: grid;
+		width: 100%;
+		// grid-auto-flow: column;
+		font-size: var(--font-size-sm);
+		grid-auto-columns: 1fr;
+	}
+	p,
+	a {
 		&:hover {
-			background-color: (#f4be69 0.1);
+			color: var(--color_primary);
 		}
 	}
 	.header_inside {
@@ -43,6 +50,7 @@
 			@include sm-down {
 				padding-top: 5%;
 				background-color: var(--color_black);
+
 				transition: ease all 300ms;
 				// transform: translateX(-100%);
 				// flex-direction: column;
@@ -61,7 +69,7 @@
 				&:hover {
 					border-radius: 10px;
 					transition: var(--transition);
-					background-color: (var(--color_primary));
+					// background-color: (var(--color_primary));
 					color: var(--color_white);
 					img {
 						filter: grayscale(100%);
@@ -86,7 +94,7 @@
 					opacity: 0;
 					transform-origin: top;
 					transition: ease all 300ms;
-					background-color: var(--color_black);
+					background-color: var(--color_black, 60%);
 					min-width: 200px;
 					width: max-content;
 					border-top: 0;
@@ -103,6 +111,7 @@
 					}
 					.dropdown_links {
 						padding: 8px 15px;
+						background-color: (var(--color_black), 50%);
 						transition: ease all 300ms;
 						&:hover {
 							border-radius: 10px;

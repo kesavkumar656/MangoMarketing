@@ -32,6 +32,15 @@
 	justify-content: space-around;
 	display: flex;
 	border: 1px solid;
+	.noBorder {
+		border: 0;
+	}
+	span {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--color_primary);
+	}
 	div {
 		align-items: center;
 		padding: 100px;

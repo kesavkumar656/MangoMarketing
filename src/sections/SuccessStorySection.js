@@ -21,8 +21,8 @@ import ContactUs from "../components/ContactUs";
 /** SuccessStorySection Section */
 export default function SuccessStorySection() {
 	return (
-		<section className={`${styles.SuccessStorySection} container `}>
-			<QuotesBoxSlider ></QuotesBoxSlider>
+		<section className={`${styles.SuccessStorySection} container-fluid `}>
+			<QuotesBoxSlider></QuotesBoxSlider>
 			<GlobalSpanning></GlobalSpanning>
 			<ContactUs></ContactUs>
 		</section>

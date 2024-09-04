@@ -1,4 +1,5 @@
 // MODULES //
+
 import { useEffect, useRef } from "react";
 // COMPONENTS //
 import gsap from "gsap";
@@ -21,7 +22,6 @@ function InnerBanner({
 	mobileImage = DefaultBannerMob.src,
 }) {
 	const bannerImgRef = useRef(null);
-	const contentRef = useRef(null);
 
 	useEffect(() => {
 		const bannerImg = bannerImgRef.current;
@@ -30,19 +30,22 @@ function InnerBanner({
 		const imageAnimation = gsap.timeline();
 
 		if (isDesktop) {
-			imageAnimation.to(bannerImg, { scale: 1.5 }, "first");
+			imageAnimation.to(bannerImg, { scale: 1.5 });
 
 			ScrollTrigger.create({
 				animation: imageAnimation,
-				trigger: ".banner_image",
+				trigger: "banner_image",
 				start: "top top",
-				scrub: true,
+				toggleActions: "restart pause reverse pause",
 				pin: true,
-				end: "+=500px",
-				// markers: true,
+				scrub: 1,
+				end: "+=300px",
+				markers: true,
 			});
 		}
 	}, []);
+
+	// Add hover or click event to trigger
 
 	return (
 		<section>
@@ -53,7 +56,8 @@ function InnerBanner({
 						<picture>
 							<source srcSet={desktopImage} media="(min-width:767px)" />
 							<img
-								className={styles.banner_image}
+								// className={styles.banner_image
+								// }
 								src={mobileImage}
 								alt="Banner Image"
 							/>

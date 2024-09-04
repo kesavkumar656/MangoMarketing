@@ -8,8 +8,7 @@ import MetaTags from "@/components/MetaTags";
 // SECTIONS //
 // import HomeHero from "../src/sections/HomeHero";
 // PLUGINS //
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 // UTILS //
 
 // STYLES //
@@ -22,7 +21,6 @@ import SuccessStorySection from "../src/sections/SuccessStorySection";
 // IMAGES //
 
 // DATA //
-gsap.registerPlugin(ScrollTrigger);
 
 /** Home Page */
 export default function HomePage() {
@@ -32,7 +30,7 @@ export default function HomePage() {
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
 
 			{/* Header */}
-			<Header  />
+			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} `}>
 				<HomeHero></HomeHero>

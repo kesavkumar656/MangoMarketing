@@ -10,12 +10,9 @@
 	height: auto;
 
 	.banner_image_wrapper {
-		width: 70%;
-		height: 70%;
-		overflow: hidden; // Ensures that anything outside 1000px x 1000px is hidden
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 	}
 
 	.banner_image {
@@ -27,9 +24,9 @@
 		img {
 			object-fit: cover;
 			border-radius: 30px;
-			width: 100%;
-			height: 100%;
-			transition: transform 0.5s ease;
+			// width: 100%;
+			// height: 100%;
+			// transition: transform 0.5s ease;
 		}
 	}
 

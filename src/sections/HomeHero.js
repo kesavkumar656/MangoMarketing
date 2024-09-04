@@ -18,6 +18,7 @@ import RowTwoContent from "../components/RowTwoContent";
 import AnimationSlider from "../components/AnimationSlider";
 import ScrollEffectTitle from "../components/ScrollEffectTitle";
 import ScrollDown from "../components/ScrollDown";
+import { useEffect } from "react";
 // IMAGES //
 
 // DATA //
@@ -25,7 +26,7 @@ import ScrollDown from "../components/ScrollDown";
 /** HomeHero Section */
 export default function HomeHero() {
 	return (
-		<div className={`${styles.hero_wrap} text_xl container   `}>
+		<div className={`${styles.hero_wrap} text_xl container-fluid   `}>
 			<h2 className="text_center">
 				Think you know your <span className="PrimaryColor">audience</span> across
 				cultures?
@@ -33,9 +34,9 @@ export default function HomeHero() {
 
 			<InnerBanner gsap={gsap} ScrollTrigger={ScrollTrigger}></InnerBanner>
 			<ScrollDown></ScrollDown>
-			<RowOne></RowOne>
+			<RowOne gsap={gsap} ScrollTrigger={ScrollTrigger}></RowOne>
 			<RowTwoContent></RowTwoContent>
-			<AnimationSlider ></AnimationSlider>
+			<AnimationSlider></AnimationSlider>
 			<ScrollEffectTitle></ScrollEffectTitle>
 		</div>
 	);

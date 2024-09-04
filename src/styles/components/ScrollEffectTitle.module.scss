@@ -1,23 +1,32 @@
 @import "../helpers/helpers.scss";
 
 .ScrollEffectTitle {
-	// margin: 0 auto;
+	.Wrapper {
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		justify-content: space-between;
+		.ImageContent {
+			img {
+				width: 40%;
+				height: 500px;
+				position: absolute;
+				visibility: hidden;
+			}
+		}
+		.Active {
+			img {
+				width: 40%;
+				height: 500px;
+				position: absolute;
+				visibility: hidden;
+			}
+		}
+		.TextDiv {
+			height: 10%;
+			width: 40%;
+		}
 
-	color: var(--color-white) !important ;
-	// padding: 50px;
-
-	// gap: 50px;
-	h1 {
-		font-size: var(--font-size-xl);
-	}
-	div:nth-child(2) {
-		// margin: 0 auto;
-		@extend %d_flex;
-		align-items: flex-start;
-		justify-content: space-around;
-		padding: 1%;
-	}
-	p {
-		// padding: 0 20px 0 20px;
+		
 	}
 }

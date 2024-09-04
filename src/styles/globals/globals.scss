@@ -10,7 +10,16 @@ body {
 	@extend .text_reg;
 	font-family: var(--font_secondary);
 }
-
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	html,
+	body {
+		width: 100%;
+		// overflow-x: hidden;
+	}
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -88,11 +97,10 @@ section {
 .AnimationGsap {
 	color: var(--color_primary) !important ;
 	opacity: 1 !important;
-	transition: var(--transition);
+	transition: ease 0.8s;
 	transform: translateX(30px);
 	animation: LinearEffectRight 10s linear infinite;
 }
-
 
 @keyframes LinearEffect {
 	from {
@@ -188,4 +196,10 @@ section {
 	:hover {
 		background-color: var(--color_primary) !important;
 	}
+}
+.imgContentActive :active {
+	position: absolute;
+	visibility: visible !important;
+	align-items: flex-start;
+	border: 5px solid red;
 }
