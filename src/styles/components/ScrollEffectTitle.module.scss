@@ -1,10 +1,13 @@
 @import "../helpers/helpers.scss";
 
 .ScrollEffectTitle {
+	height: fit-content;
 	.Wrapper {
+		position: relative;
 		display: flex;
 		align-items: center;
 		overflow: hidden;
+		height: 5%;
 		justify-content: space-between;
 		.ImageContent {
 			img {
@@ -26,7 +29,13 @@
 			height: 10%;
 			width: 40%;
 		}
+		.ImageContent {
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
 
-		
+		.imgContentActive {
+			transform: scale(1.1); /* Example of an active state effect */
+		}
 	}
 }

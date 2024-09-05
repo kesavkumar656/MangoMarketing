@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // COMPONENTS //
 import Image from "next/image";
-import ScrollEffect from "./ScrollEffect";
 import { useEffect } from "react";
 // SECTIONS //
 // PLUGINS //
@@ -23,22 +22,18 @@ gsap.registerPlugin(ScrollTrigger);
 /** ScrollEffectTitle Component */
 export default function ScrollEffectTitle() {
 	useEffect(() => {
-		// const container = document.querySelector(`.${styles.ScrollEffect}`);
-		// const h3Elements = container.querySelectorAll("h3");
-		// const imgElements = container.querySelectorAll("#ImageDiv");
 		const container = document.querySelector(`.${styles.ScrollEffectTitle}`);
-		const element = container.querySelectorAll(`.${styles.ImageContent}`);
-		const h3 = container.querySelectorAll("h3");
-		const ImgDiv = container.querySelectorAll("#ImageContent");
+		const h3Elements = container.querySelectorAll("h3");
+		const imgElements = container.querySelectorAll("#ImageContent");
 
-		h3.forEach((h3, index) => {
+		// Animation for h3 elements
+		h3Elements.forEach((h3) => {
 			gsap.to(h3, {
 				autoAlpha: 1,
 				scrollTrigger: {
 					trigger: h3,
 					start: "top bottom-=100",
 					toggleActions: "play none none reverse",
-					// markers: true,
 				},
 			});
 
@@ -47,35 +42,31 @@ export default function ScrollEffectTitle() {
 				start: "top center",
 				end: () => `+=${h3.clientHeight + 20}`,
 				toggleActions: "play reverse none reverse",
-				toggleClass: { targets: h3, className: "AnimationGsap" },
-				// markers: true,
+				toggleClass: { targets: h3, className: styles.AnimationGsap },
+				markers: true,
 			});
 		});
-		if (element.length > 0) {
-			element.forEach((img) => {
-				gsap.to(img, {
-					autoAlpha: 1,
-					scrollTrigger: {
-						trigger: img, // Use the individual image element as the trigger
-						start: "top center",
-						toggleActions: "play none none reverse",
-						markers: true,
-						onEnter: () => img.classList.add(styles.Active), // Apply class to the individual image
-						onLeave: () => img.classList.remove(styles.Active),
-						onEnterBack: () => img.classList.add(styles.Active),
-						onLeaveBack: () => img.classList.remove(styles.Active),
-					},
-				});
-			});
-		}
 
-		ScrollTrigger.create({
-			trigger: "#ImageDiv",
-			start: "top center",
-			end: () => `+=${h3.clientHeight + 20}`,
-			toggleActions: "play reverse none reverse",
-			toggleClass: { targets: ImgDiv, className: "imgContentActive" },
-			markers: true,
+		// Animation for image elements
+		imgElements.forEach((img) => {
+			gsap.to(img, {
+				autoAlpha: 1,
+				scrollTrigger: {
+					trigger: img,
+					start: "top center",
+					end: () => `+=${img.clientHeight + 20}`,
+					toggleActions: "play none none reverse",
+					onLeave: () => gsap.to(img, { autoAlpha: 0 }),
+					onEnterBack: () => gsap.to(img, { autoAlpha: 1 }),
+				},
+			});
+
+			ScrollTrigger.create({
+				trigger: img,
+				start: "top center",
+				toggleClass: { targets: img, className: styles.imgContentActive },
+				markers: true,
+			});
 		});
 	}, []);
 
@@ -117,10 +108,10 @@ export default function ScrollEffectTitle() {
 
 			{Images.map((data, index) => (
 				<div id="Wrapper" key={index}>
-					<div className={`${styles.Wrapper} `}>
+					<div className={styles.Wrapper}>
 						<div>
 							<Image
-								className={`${styles.ImageContent}`}
+								className={styles.ImageContent}
 								id="ImageContent"
 								width={400}
 								height={300}
@@ -128,8 +119,7 @@ export default function ScrollEffectTitle() {
 								src={data.image}
 							/>
 						</div>
-
-						<h3 className={`${styles.TextDiv}`}>{data.h3}</h3>
+						<h3 className={styles.TextDiv}>{data.h3}</h3>
 					</div>
 				</div>
 			))}
