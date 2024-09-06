@@ -43,11 +43,16 @@
 	}
 	div {
 		align-items: center;
-		padding: 100px;
+		// padding: 100px;
 		flex-direction: column;
 		gap: 30px;
 		display: flex;
+		padding: 5% 5%;
 		width: 100%;
 		border: 1px solid black;
+		div {
+			border: 0;
+			padding: 10px;
+		}
 	}
 }

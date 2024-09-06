@@ -47,15 +47,6 @@ export default function AnimationSlider() {
 
 				<Image alt="" src={logo3}></Image>
 
-				<Image src={logo4}></Image>
-
-				<Image alt="" src={logo5}></Image>
-				<Image alt="" src={logo1}></Image>
-
-				<Image alt="" src={logo2}></Image>
-
-				<Image alt="" src={logo3}></Image>
-
 				<Image alt="" src={logo4}></Image>
 
 				<Image alt="" src={logo5}></Image>
@@ -71,23 +62,6 @@ export default function AnimationSlider() {
 
 				<Image alt="" src={logo10}></Image>
 				<Image alt="" src={logo6}></Image>
-
-				<Image alt="" src={logo7}></Image>
-
-				<Image alt="" src={logo8}></Image>
-
-				<Image alt="" src={logo9}></Image>
-
-				<Image alt="" src={logo10}></Image>
-				<Image alt="" src={logo6}></Image>
-
-				<Image alt="" src={logo7}></Image>
-
-				<Image alt="" src={logo8}></Image>
-
-				<Image alt="" src={logo9}></Image>
-
-				<Image alt="" src={logo10}></Image>
 			</div>
 		</div>
 	);

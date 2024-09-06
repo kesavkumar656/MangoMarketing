@@ -5,11 +5,13 @@
 	.Wrapper {
 		position: relative;
 		display: flex;
-		align-items: center;
-		overflow: hidden;
-		height: 5%;
+		// align-items: center;
+		/* overflow: hidden; */
+		height: 200px;
 		justify-content: space-between;
+
 		.ImageContent {
+			visibility: hidden;
 			img {
 				width: 40%;
 				height: 500px;
@@ -21,21 +23,17 @@
 			img {
 				width: 40%;
 				height: 500px;
-				position: absolute;
+				// position: absolute;
 				visibility: hidden;
 			}
 		}
 		.TextDiv {
-			height: 10%;
+			height: 100px;
 			width: 40%;
-		}
-		.ImageContent {
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
 		}
 
 		.imgContentActive {
-			transform: scale(1.1); /* Example of an active state effect */
+			z-index: 5;
 		}
 	}
 }

@@ -27,7 +27,9 @@ export default function RowTwoContent() {
 					</div>
 					<div className={`${styles.RowTwo} `}>
 						<div className="next_image">
+							
 							<Image src={Bridge} width={500} height={200} alt="" />
+					
 						</div>
 						<div>
 							<p>

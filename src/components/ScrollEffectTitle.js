@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /** ScrollEffectTitle Component */
 export default function ScrollEffectTitle() {
+	
 	useEffect(() => {
 		const container = document.querySelector(`.${styles.ScrollEffectTitle}`);
 		const h3Elements = container.querySelectorAll("h3");
@@ -28,14 +29,23 @@ export default function ScrollEffectTitle() {
 
 		// Animation for h3 elements
 		h3Elements.forEach((h3) => {
-			gsap.to(h3, {
-				autoAlpha: 1,
-				scrollTrigger: {
-					trigger: h3,
-					start: "top bottom-=100",
-					toggleActions: "play none none reverse",
-				},
-			});
+			gsap.fromTo(
+				h3,
+				{ autoAlpha: 0 }, // Initial state: hidden and shifted down
+				{
+					x: 50,
+					autoAlpha: 1,
+					ease: "power1.inOut",
+					duration: 1.5,
+					scrollTrigger: {
+						trigger: h3,
+						start: "top bottom-=100",
+						toggleActions: "play none none reverse",
+						scrub: true,
+						// markers: true,
+					},
+				}
+			);
 
 			ScrollTrigger.create({
 				trigger: h3,
@@ -49,17 +59,26 @@ export default function ScrollEffectTitle() {
 
 		// Animation for image elements
 		imgElements.forEach((img) => {
-			gsap.to(img, {
-				autoAlpha: 1,
-				scrollTrigger: {
-					trigger: img,
-					start: "top center",
-					end: () => `+=${img.clientHeight + 20}`,
-					toggleActions: "play none none reverse",
-					onLeave: () => gsap.to(img, { autoAlpha: 0 }),
-					onEnterBack: () => gsap.to(img, { autoAlpha: 1 }),
-				},
-			});
+			gsap.fromTo(
+				img,
+				{ autoAlpha: 0 }, // Initial state: hidden and slightly smaller
+				{
+					autoAlpha: 1,
+					pin: true,
+					ease: "power1",
+					duration: 4,
+					scrollTrigger: {
+						trigger: img,
+						start: "top center",
+						end: () => "+=300", // Adjust end value for better timing
+						toggleActions: "play none none reverse",
+						scrub: true,
+						onLeave: () => gsap.to(img, { autoAlpha: 0 }),
+						// onEnterBack: () => gsap.to(img, { autoAlpha: 1 }),
+						markers: true,
+					},
+				}
+			);
 
 			ScrollTrigger.create({
 				trigger: img,
