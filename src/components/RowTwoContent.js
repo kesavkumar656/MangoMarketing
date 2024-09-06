@@ -5,31 +5,47 @@ import Image from "next/image";
 // SECTIONS //
 
 // PLUGINS //
-
+import Slider from "react-slick";
 // UTILS //
 
 // STYLES //
 import styles from "@/styles/components/RowTwoContent.module.scss";
 
 // IMAGES //
-import Bridge from "@/../public/img/assets/bridge.png";
+
 // DATA //
 
 /** RowTwoContent Component */
 export default function RowTwoContent() {
+	const data = [
+		{ img: "/img/assets/a/img1.png" },
+		{ img: "/img/assets/a/img2.png" },
+		{ img: "/img/assets/a/img3.png" },
+	];
+	const sliderSettings = {
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// autoplay: true,
+	};
 	return (
 		<>
-			<div className={`${styles.RowTwoContainer} container section_spacing `}>
-				<div className={`${styles.R2wrapper} container `}>
+			<div className={`${styles.RowTwoContainer} container section_spacing`}>
+				<div className={`${styles.R2wrapper} container`}>
 					<div className="text_xxxxl text_300">
 						Say hello <span className="PrimaryColor">to</span>{" "}
 						<br className={styles.break} /> Mango Marketing!
 					</div>
-					<div className={`${styles.RowTwo} `}>
+					<div className={`${styles.RowTwo}`}>
 						<div className="next_image">
-							
-							<Image src={Bridge} width={500} height={200} alt="" />
-					
+							<Slider {...sliderSettings}>
+								{data.map((item, index) => (
+									<div key={index} className={`${styles.liveImage}`}>
+										<Image src={item.img} width={500} height={200} alt="" />
+									</div>
+								))}
+							</Slider>
 						</div>
 						<div>
 							<p>

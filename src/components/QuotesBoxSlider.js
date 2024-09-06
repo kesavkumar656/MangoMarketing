@@ -74,7 +74,6 @@ export default function QuotesBoxSlider() {
 
 						<div>
 							<div className={`${styles.flexClm}`}>
-								{" "}
 								<p>{item.name}</p>
 								<p className="PrimaryColor">{item.company}</p>
 							</div>
