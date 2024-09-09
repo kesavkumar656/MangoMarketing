@@ -24,10 +24,13 @@ export default function RowTwoContent() {
 	];
 	const sliderSettings = {
 		infinite: true,
-		speed: 300,
+		animation: false,
+		speed: 500,
+		swipe: false,
+		arrow: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
+		autoplay: true,
 	};
 	return (
 		<>
@@ -39,13 +42,11 @@ export default function RowTwoContent() {
 					</div>
 					<div className={`${styles.RowTwo}`}>
 						<div className="next_image">
-							<Slider {...sliderSettings}>
-								{data.map((item, index) => (
-									<div key={index} className={`${styles.liveImage}`}>
-										<Image src={item.img} width={500} height={200} alt="" />
-									</div>
-								))}
-							</Slider>
+							{data.map((item, index) => (
+								<div key={index} className={`${styles.liveImage}`}>
+									<Image src={item.img} width={500} height={200} alt="" />
+								</div>
+							))}
 						</div>
 						<div>
 							<p>

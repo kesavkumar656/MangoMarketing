@@ -20,7 +20,14 @@
 		// width: 80%;
 		margin: 0 auto;
 	}
-	.liveImage {
-		background-color: aliceblue;
+
+	.RowTwo {
+		.liveImage {
+			width: 500px !important;
+			img {
+				position: absolute;
+			
+			}
+		}
 	}
 }
