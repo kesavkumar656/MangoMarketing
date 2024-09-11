@@ -2,12 +2,13 @@
 
 .main_header {
 	@extend %f_r_aj_center;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 
-	padding-top: 30px;
-	padding-bottom: 10px;
-	width: var(--container-width);
+	background-color: transparent;
 	z-index: 20;
+	padding-top: 50px;
+	color: var(--color_white);
 	top: 0;
 
 	color: var(--color_white);
@@ -27,8 +28,15 @@
 		}
 	}
 	.header_inside {
-		@extend %f_r_aj_center;
 		justify-content: space-between;
+		@extend %f_r_a_center;
+		justify-content: space-between;
+		backdrop-filter: blur(35px);
+		background-color: hsla(0, 0%, 6%, 0.5);
+		border: 1px solid var(--color_border);
+		height: 65px;
+		padding: 3%;
+		border-radius: 20px;
 		.image_wrap {
 			padding: 10px 0;
 			max-width: 120px;
@@ -40,9 +48,7 @@
 		}
 		.links_wrap {
 			@extend %d_flex;
-			border: 1px solid var(--color_border);
-			border-radius: 10px;
-			background-color: var(--color_secondary_deep);
+
 			align-self: stretch;
 			padding-inline-start: 0;
 

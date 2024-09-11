@@ -49,7 +49,7 @@ function InnerBanner({
 
 	return (
 		<section>
-			<div className={`${styles.inner_banner_wrap} container`}>
+			<div className={`${styles.inner_banner_wrap}  container`}>
 				<div className={styles.banner_image_wrapper}>
 					{/* Banner Image */}
 					<div className={styles.banner_image} ref={bannerImgRef}>

@@ -26,7 +26,9 @@ import { useEffect } from "react";
 /** HomeHero Section */
 export default function HomeHero() {
 	return (
-		<div className={`${styles.hero_wrap} text_xl container-fluid   `}>
+		<div
+			className={`${styles.hero_wrap} section_spacing text_xl container-fluid   `}
+		>
 			<h2 className="text_center">
 				Think you know your <span className="PrimaryColor">audience</span> across
 				cultures?
