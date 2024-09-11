@@ -25,9 +25,7 @@ export default function RowTwoContent() {
 	const sliderSettings = {
 		infinite: true,
 		animation: false,
-		speed: 500,
-		swipe: false,
-		arrow: false,
+
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
@@ -40,20 +38,25 @@ export default function RowTwoContent() {
 						Say hello <span className="PrimaryColor">to</span>{" "}
 						<br className={styles.break} /> Mango Marketing!
 					</div>
-					<div className={`${styles.RowTwo}`}>
-						<div className="next_image">
+					<div className={styles.RowTwo}>
+						<Slider {...sliderSettings}>
 							{data.map((item, index) => (
-								<div key={index} className={`${styles.liveImage}`}>
-									<Image src={item.img} width={500} height={200} alt="" />
+								<div key={index} className={styles.liveImage}>
+									<Image
+										src={item.img}
+										width={500}
+										height={200}
+										alt={`Image ${index + 1}`}
+									/>
 								</div>
 							))}
-						</div>
-						<div>
-							<p>
-								A boutique agency that specialises in reaching ethnic communities across
-								the UK and beyond, with a client-centric approach that brings results.
-							</p>
-						</div>
+						</Slider>
+					</div>
+					<div>
+						<p>
+							A boutique agency that specialises in reaching ethnic communities across
+							the UK and beyond, with a client-centric approach that brings results.
+						</p>
 					</div>
 				</div>
 			</div>

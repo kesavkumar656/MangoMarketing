@@ -36,32 +36,34 @@ export default function RowOne() {
 		ScrollTrigger.create({
 			trigger: ImageDiv,
 			start: "top center",
-			end: 30,
+			end: "100px",
 			toggleActions: "play reverse none reverse",
 			toggleClass: `${styles.active}`,
 			markers: true,
 		});
-		
-		gsap.to(Img1, {
-			x: -200,
 
-			y: 100,
-			duration: 9,
+		gsap.to(Img1, {
+			x: -100,
+
+			y: 50,
+			duration: 3,
 			scrollTrigger: {
 				trigger: Img1,
 				start: "top center",
-				end: "bottom top",
+				end: "200px",
 				scrub: 1,
+				markers: true,
 			},
 		});
 		gsap.to(Img3, {
-			x: 200,
-			y: 100,
-			duration: 9,
+			x: 100,
+			y: 50,
+			duration: 3,
 			scrollTrigger: {
 				trigger: Img3,
 				start: "top center",
-				end: "bottom top",
+				end: "200px",
+
 				scrub: 1,
 			},
 		});
