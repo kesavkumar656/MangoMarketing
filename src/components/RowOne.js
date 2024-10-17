@@ -39,7 +39,7 @@ export default function RowOne() {
 			end: "100px",
 			toggleActions: "play reverse none reverse",
 			toggleClass: `${styles.active}`,
-			markers: true,
+			// markers: true,
 		});
 
 		gsap.to(Img1, {
@@ -52,7 +52,7 @@ export default function RowOne() {
 				start: "top center",
 				end: "200px",
 				scrub: 1,
-				markers: true,
+				// markers: true,
 			},
 		});
 		gsap.to(Img3, {

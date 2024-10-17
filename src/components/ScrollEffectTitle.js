@@ -53,7 +53,7 @@ export default function ScrollEffectTitle() {
 				end: () => `+=${h3.clientHeight + 20}`,
 				toggleActions: "play reverse none reverse",
 				toggleClass: { targets: h3, className: styles.AnimationGsap },
-				markers: true,
+				// markers: true,
 			});
 		});
 
@@ -75,7 +75,7 @@ export default function ScrollEffectTitle() {
 						scrub: true,
 						onLeave: () => gsap.to(img, { autoAlpha: 0 }),
 						// onEnterBack: () => gsap.to(img, { autoAlpha: 1 }),
-						markers: true,
+						// markers: true,
 					},
 				}
 			);
@@ -84,7 +84,7 @@ export default function ScrollEffectTitle() {
 				trigger: img,
 				start: "top center",
 				toggleClass: { targets: img, className: styles.imgContentActive },
-				markers: true,
+				// markers: true,
 			});
 		});
 	}, []);

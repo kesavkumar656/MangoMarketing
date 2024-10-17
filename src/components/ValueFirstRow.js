@@ -59,7 +59,7 @@ export default function ValueFirstRow() {
 			end: 30,
 			toggleActions: "play reverse none reverse",
 			// toggleClass: { targets: h3, className: "AnimationGsap" },
-			markers: true,
+			// markers: true,
 		});
 	});
 

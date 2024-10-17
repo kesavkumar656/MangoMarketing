@@ -40,7 +40,7 @@ function InnerBanner({
 				pin: true,
 				scrub: 1,
 				end: "+=300px",
-				markers: true,
+				// markers: true,
 			});
 		}
 	}, []);
