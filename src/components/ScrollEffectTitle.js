@@ -31,7 +31,7 @@ export default function ScrollEffectTitle() {
 		h3Elements.forEach((h3) => {
 			gsap.fromTo(
 				h3,
-				{ autoAlpha: 0 }, // Initial state: hidden and shifted down
+				{ autoAlpha: 0 }, 
 				{
 					x: 50,
 					autoAlpha: 1,
@@ -61,7 +61,7 @@ export default function ScrollEffectTitle() {
 		imgElements.forEach((img) => {
 			gsap.fromTo(
 				img,
-				{ autoAlpha: 0 }, // Initial state: hidden and slightly smaller
+				{ autoAlpha: 0 },
 				{
 					autoAlpha: 1,
 					pin: true,
@@ -70,7 +70,7 @@ export default function ScrollEffectTitle() {
 					scrollTrigger: {
 						trigger: img,
 						start: "top center",
-						end: () => "+=300", // Adjust end value for better timing
+						end: () => "+=300",
 						toggleActions: "play none none reverse",
 						scrub: true,
 						onLeave: () => gsap.to(img, { autoAlpha: 0 }),
